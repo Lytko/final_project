@@ -330,7 +330,7 @@
 
 button, input, a {
   outline: none !important;
-  cursor: pointer;
+  cursor: pointer !important;
 }
 
 .line {
