@@ -328,12 +328,9 @@
   text-decoration: none;
 }
 
-a {
-  cursor: pointer;
-}
-
-button, input {
+button, input, a {
   outline: none !important;
+  cursor: pointer;
 }
 
 .line {
