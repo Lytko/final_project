@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans");
 .header {
   font-family: 'RobotoRegular';
   background-color: #f7f9f9;
@@ -160,6 +161,105 @@
   padding-bottom: 39px;
 }
 
+.main {
+  padding-top: 170px;
+  padding-bottom: 186px;
+  background-image: url("../img/main/main.png");
+  background-size: cover;
+  z-index: 0;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 24px;
+}
+
+.main-container {
+  position: relative;
+}
+
+.main-image {
+  z-index: 1;
+  position: absolute;
+  right: 0;
+  top: -250px;
+}
+
+.main-line {
+  width: 50%;
+  background-color: #fff;
+  margin-bottom: 33px;
+}
+
+.main-button {
+  width: 198px;
+  height: 55px;
+  color: #ffffff;
+  font-family: 'RobotoRegular';
+  font-size: 13px;
+  text-transform: uppercase;
+  background-color: transparent;
+  border: 2px solid;
+  border-radius: 40px;
+}
+
+.main-button:hover {
+  background-color: #3fc380;
+}
+
+.main-items {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  color: #ffffff;
+}
+
+.main-items__title {
+  font-size: 170px;
+  text-transform: uppercase;
+  font-family: 'FranklinGothicHeavy';
+  z-index: 2;
+  height: 117px;
+  margin-bottom: 43px;
+}
+
+.main-text {
+  font-size: 19px;
+  font-weight: 400;
+  line-height: 26px;
+  font-family: 'Open Sans';
+  margin-bottom: 34px;
+}
+
+.main-layers__first {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.main-layers__second {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
 @font-face {
   font-family: 'RobotoBold';
   src: url("../fonts/RobotoBold/RobotoBold.eot");
@@ -216,11 +316,30 @@
   font-style: normal;
 }
 
+@font-face {
+  font-family: 'FranklinGothicHeavy';
+  src: url("../fonts/FranklinGothicHeavy/ITCFranklinGothicStd-Hvy.eot");
+  src: url("../fonts/FranklinGothicHeavy/ITCFranklinGothicStd-Hvy?#iefix") format("embedded-opentype"), url("../fonts/FranklinGothicHeavy/ITCFranklinGothicStd-Hvy.woff") format("woff"), url("../fonts/FranklinGothicHeavy/ITCFranklinGothicStd-Hvy.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
 * {
   text-decoration: none;
 }
 
 a {
   cursor: pointer;
+}
+
+button, input {
+  outline: none !important;
+}
+
+.line {
+  width: 100%;
+  height: 5px;
+  background-color: #dfdfdf;
+  opacity: 0.5;
 }
 /*# sourceMappingURL=style.css.map */
