@@ -1,0 +1,69 @@
+.choice
+    background-image: url('../img/choice/bg-img-first.png') 
+    background-size: fixed
+    position: relative
+    z-index: 1
+    height: 460px
+    &:before
+        content: ''
+        right: 0
+        top: 0
+        width: 40%
+        height: 100%
+        background-color: #f7f9f9
+        position: absolute
+        z-index: -1
+    &-block
+        &__first
+            &-title
+                width: 428px
+                position: absolute
+                top: 30%
+                left: 25%
+                font-family: 'FranklinGothicDemiC'
+                color: #ffffff
+                font-size: 110px
+                font-weight: 400
+                line-height: 80px
+                text-transform: uppercase
+                text-align: right
+            &-img
+                position: absolute
+                left: 41%
+                bottom: 0
+        &__second
+            &-wrap
+                width: 458px
+                position: absolute
+                top: 20%
+                left: 63%
+            &-title
+                color: #383838
+                font-family: 'RobotoBold'
+                font-size: 30px
+                font-weight: 700
+                line-height: 24px
+                margin-bottom: 14px
+            &-text
+                font-size: 16px
+                font-weight: 300
+                line-height: 24px
+                font-family: 'RobotoLight'
+                text-align: justify
+                margin-bottom: 28px
+    &-button
+        width: 184px
+        height: 51px
+        color: #ffffff
+        font-family: 'RobotoRegular'
+        font-size: 13px
+        text-transform: uppercase
+        background-color: #3fc380
+        border-radius: 40px
+        &:hover
+            background-color: transparent
+            color: #383838
+            border: 2px solid
+
+                        
+            

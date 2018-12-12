@@ -77,3 +77,13 @@
     font-weight: normal;
     font-style: normal;
     }
+
+@font-face {
+        font-family: 'FranklinGothicDemiC';
+        src: url('../fonts/FranklinGothicDemiC/FranklinGothicDemiC.eot');
+        src: url('../fonts/FranklinGothicDemiC/FranklinGothicDemiC.eot?#iefix') format('embedded-opentype'),
+            url('../fonts/FranklinGothicDemiC/FranklinGothicDemiC.woff') format('woff'),
+            url('../fonts/FranklinGothicDemiC/FranklinGothicDemiC.ttf') format('truetype');
+        font-weight: normal;
+        font-style: normal;
+    }
