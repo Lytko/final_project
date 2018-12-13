@@ -269,13 +269,6 @@
   font-family: 'RobotoRegular';
 }
 
-.info-block__first-title {
-  color: #383838;
-  font-size: 32px;
-  font-weight: 700;
-  line-height: 24px;
-}
-
 .info-block__first-title:after {
   content: '';
   width: 56px;
@@ -386,11 +379,6 @@
 }
 
 .choice-block__second-title {
-  color: #383838;
-  font-family: 'RobotoBold';
-  font-size: 30px;
-  font-weight: 700;
-  line-height: 24px;
   margin-bottom: 14px;
 }
 
@@ -468,11 +456,6 @@
 }
 
 .choice2-block__second-title {
-  color: #383838;
-  font-family: 'RobotoBold';
-  font-size: 30px;
-  font-weight: 700;
-  line-height: 24px;
   margin-bottom: 14px;
 }
 
@@ -514,11 +497,6 @@
 }
 
 .main-attraction__items-title {
-  color: #383838;
-  font-family: 'RobotoBold';
-  font-size: 30px;
-  font-weight: 700;
-  line-height: 24px;
   margin-bottom: 15px;
 }
 
@@ -597,6 +575,29 @@
 .main-attraction__button:hover {
   background-color: transparent;
   color: #383838;
+}
+
+.idea {
+  margin-bottom: 77px;
+}
+
+.idea-title {
+  margin-top: 44px;
+  margin-bottom: 15px;
+}
+
+.idea-text {
+  text-align: justify;
+  color: #383838;
+  font-family: 'RobotoLight';
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 25px;
+}
+
+.idea-image {
+  margin: 35px 0;
+  width: 100%;
 }
 
 @font-face {
@@ -700,5 +701,13 @@ button, input, a {
 
 row {
   margin-left: 0px;
+}
+
+.title {
+  color: #383838;
+  font-family: 'RobotoBold';
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 24px;
 }
 /*# sourceMappingURL=style.css.map */
