@@ -625,10 +625,6 @@
   left: -20px;
 }
 
-.owl-prev:hover {
-  display: none;
-}
-
 .owl-next {
   width: 6px;
   height: 25px;
