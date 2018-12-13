@@ -4,6 +4,11 @@
   background-color: #f7f9f9;
 }
 
+.header-logo__img {
+  min-width: 82px;
+  min-height: 46px;
+}
+
 .header-wrap {
   padding: 24px;
   -webkit-box-align: center;
@@ -74,6 +79,11 @@
 .footer {
   font-family: 'RobotoRegular';
   background-color: #393939;
+}
+
+.footer-logo__img {
+  min-width: 82px;
+  min-height: 46px;
 }
 
 .footer-wrap {
