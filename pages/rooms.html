@@ -7,6 +7,8 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="../css/bootstrap.min.css">
     <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/owl.carousel.min.css">
+    <link rel="stylesheet" href="../css/owl.theme.default.min.css">
 
     <title>Номера</title>
 </head>
@@ -41,6 +43,54 @@
             </div>
         </div>
     </header>
+
+    <hr class="line">
+
+    <section class="rooms">
+        <div class="container">
+            <div class="rooms-title title">Наши комфортабельные номера!</div>
+            <div class="rooms-block row">
+                <div class="rooms-block__first col-5">
+                    <img src="../img/rooms/main-img-1.png" alt="">
+                    <div class="owl-carousel owl-theme">
+                        <div class="item">
+                            <h4><img src="../img/rooms/slider-img-1.png" alt=""></h4>
+                        </div>
+                        <div class="item">
+                            <h4><img src="../img/rooms/slider-img-2.png" alt=""></h4>
+                        </div>
+                        <div class="item">
+                            <h4><img src="../img/rooms/slider-img-3.png" alt=""></h4>
+                        </div>
+                        <div class="item">
+                            <h4><img src="../img/rooms/slider-img-1.png" alt=""></h4>
+                        </div>
+                        <div class="item">
+                            <h4><img src="../img/rooms/slider-img-2.png" alt=""></h4>
+                        </div>
+                        <div class="item">
+                            <h4><img src="../img/rooms/slider-img-3.png" alt=""></h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="rooms-block__second col-7">
+                    <h3 class="rooms-block__second-title">2-х комнатный четырёхместный номер.</h3>
+                    <p class="rooms-block__second-text">2-х комнатный улучшенный четырёхместный номер с гостиной,
+                        кухней, большой террасой и отдельным входом, с видом на Генуэзскую крепость. Лучше всего
+                        подойдёт для семьи с детьми или компании. Возможно дополнительное место. (оговаривается).</p>
+                    <p class="rooms-block__second-price">
+                            Стоимость: 2400р в сутки. <br>
+                            с 1 мая по 10 мая — 3000р. <br>
+                            с 20 июня до 15 сентября — 5000р <br>
+                            <span><span>*</span> Все цены могут корректироваться.</span>
+                    </p>
+                    <button type="submit" class="button">Забронировать!</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
     <footer class="footer">
         <div class="container column">
             <div class="row footer-wrap">
@@ -77,5 +127,31 @@
             </p>
         </div>
     </footer>
+
+    <script src="../js/jquery.min.js"></script>
+    <script src="../js/owl.carousel.min.js"></script>
+
+    <script>
+        $(document).ready(function () {
+            $('.owl-carousel').owlCarousel({
+                loop: true,
+                margin: 10,
+                nav: true,
+                responsive: {
+                    0: {
+                        items: 1
+                    },
+                    600: {
+                        items: 2
+                    },
+                    1000: {
+                        items: 3
+                    }
+                }
+            })
+        });
+    </script>
+
 </body>
+
 </html>

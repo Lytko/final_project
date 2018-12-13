@@ -221,6 +221,7 @@
 
 .main-button:hover {
   background-color: #3fc380;
+  border: 2px solid transparent;
 }
 
 .main-items {
@@ -392,23 +393,6 @@
   margin-bottom: 28px;
 }
 
-.choice-button {
-  width: 184px;
-  height: 51px;
-  color: #ffffff;
-  font-family: 'RobotoRegular';
-  font-size: 13px;
-  text-transform: uppercase;
-  background-color: #3fc380;
-  border-radius: 40px;
-}
-
-.choice-button:hover {
-  background-color: transparent;
-  color: #383838;
-  border: 2px solid;
-}
-
 .choice2 {
   margin-bottom: 65px;
   background-image: url("../img/choice/bg-image-second.png");
@@ -463,23 +447,6 @@
 .choice2-block__second-text {
   text-align: justify;
   margin-bottom: 28px;
-}
-
-.choice2-button {
-  width: 184px;
-  height: 51px;
-  color: #ffffff;
-  font-family: 'RobotoRegular';
-  font-size: 13px;
-  text-transform: uppercase;
-  background-color: #3fc380;
-  border-radius: 40px;
-}
-
-.choice2-button:hover {
-  background-color: transparent;
-  color: #383838;
-  border: 2px solid;
 }
 
 .main-attraction__img {
@@ -551,22 +518,8 @@
 }
 
 .main-attraction__button {
-  width: 194px;
-  height: 61px;
-  color: #ffffff;
-  font-family: 'RobotoRegular';
-  font-size: 13px;
-  text-transform: uppercase;
-  background-color: #3fc380;
-  border: 2px solid;
-  border-radius: 40px;
   margin-left: auto;
   margin-right: auto;
-}
-
-.main-attraction__button:hover {
-  background-color: transparent;
-  color: #383838;
 }
 
 .idea {
@@ -585,6 +538,91 @@
 .idea-image {
   margin: 35px 0;
   width: 100%;
+}
+
+.rooms-title {
+  margin-top: 42px;
+  margin-bottom: 27px;
+}
+
+.rooms-block__second-title {
+  color: #3fc380;
+  font-family: 'RobotoBold';
+  font-size: 19px;
+  font-weight: 700;
+  line-height: 24px;
+  margin-bottom: 13px;
+}
+
+.rooms-block__second-title:before {
+  content: '';
+  width: 40px;
+  height: 2px;
+  background-color: #cccccc;
+  margin-top: 11px;
+  margin-bottom: 17px;
+  display: block;
+}
+
+.rooms-block__second-text {
+  color: #383838;
+  font-family: 'RobotoLight';
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 22px;
+  margin-bottom: 21px;
+  text-align: justify;
+}
+
+.rooms-block__second-price {
+  color: #383838;
+  font-family: 'RobotoBold';
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 22px;
+  margin-bottom: 25px;
+}
+
+.rooms-block__second-price span {
+  color: #959595;
+  font-size: 12px;
+}
+
+.rooms-block__second-price span span {
+  color: #3fc380;
+}
+
+.owl-theme {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 9px;
+  max-width: 400px;
+}
+
+.owl-prev {
+  width: 6px;
+  height: 25px;
+  background-image: url("../img/rooms/arrow-left.png") !important;
+  position: absolute;
+  bottom: 35%;
+  left: -20px;
+}
+
+.owl-prev:hover {
+  display: none;
+}
+
+.owl-next {
+  width: 6px;
+  height: 25px;
+  background-image: url("../img/rooms/arrow-right.png") !important;
+  position: absolute;
+  bottom: 35%;
+  right: -20px;
+}
+
+.owl-dots {
+  display: none;
 }
 
 @font-face {
@@ -704,5 +742,23 @@ row {
   font-size: 16px;
   font-weight: 300;
   line-height: 24px;
+}
+
+.button {
+  width: 194px;
+  height: 61px;
+  color: #ffffff;
+  font-family: 'RobotoRegular';
+  font-size: 13px;
+  text-transform: uppercase;
+  background-color: #3fc380;
+  border: 2px solid transparent;
+  border-radius: 40px;
+}
+
+.button:hover {
+  background-color: transparent;
+  color: #3fc380;
+  border: 2px solid;
 }
 /*# sourceMappingURL=style.css.map */
