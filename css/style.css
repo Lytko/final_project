@@ -281,11 +281,6 @@
 
 .info-block__first-text {
   text-align: justify;
-  color: #383838;
-  font-size: 16px;
-  font-weight: 300;
-  line-height: 23px;
-  font-family: 'RobotoLight';
 }
 
 .about {
@@ -383,10 +378,6 @@
 }
 
 .choice-block__second-text {
-  font-size: 16px;
-  font-weight: 300;
-  line-height: 24px;
-  font-family: 'RobotoLight';
   text-align: justify;
   margin-bottom: 28px;
 }
@@ -460,10 +451,6 @@
 }
 
 .choice2-block__second-text {
-  font-size: 16px;
-  font-weight: 300;
-  line-height: 24px;
-  font-family: 'RobotoLight';
   text-align: justify;
   margin-bottom: 28px;
 }
@@ -501,11 +488,6 @@
 }
 
 .main-attraction__items-text {
-  color: #383838;
-  font-family: 'RobotoLight';
-  font-size: 16px;
-  font-weight: 300;
-  line-height: 24px;
   margin-bottom: 43px;
 }
 
@@ -588,11 +570,6 @@
 
 .idea-text {
   text-align: justify;
-  color: #383838;
-  font-family: 'RobotoLight';
-  font-size: 16px;
-  font-weight: 300;
-  line-height: 25px;
 }
 
 .idea-image {
@@ -708,6 +685,14 @@ row {
   font-family: 'RobotoBold';
   font-size: 30px;
   font-weight: 700;
+  line-height: 24px;
+}
+
+.text {
+  color: #383838;
+  font-family: 'RobotoLight';
+  font-size: 16px;
+  font-weight: 300;
   line-height: 24px;
 }
 /*# sourceMappingURL=style.css.map */
