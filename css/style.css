@@ -1004,8 +1004,9 @@
   line-height: 24px;
   background: url("../img/feedback/text.png") no-repeat;
   background-color: #ffffff;
-  background-position: 16px 5px;
+  background-position: 16px 16px;
   padding-left: 48px;
+  padding-top: 16px;
 }
 
 .feedback-button {
@@ -1020,6 +1021,146 @@
 
 .line-btm {
   margin-top: 0;
+}
+
+.contacts-info {
+  margin-bottom: 49px;
+}
+
+.contacts-info__title {
+  margin-top: 41px;
+  margin-bottom: 21px;
+}
+
+.contacts-info__text {
+  text-align: justify;
+}
+
+.contacts-main {
+  position: relative;
+  margin-bottom: 76px;
+}
+
+.contacts-main__wrap {
+  background-color: #3fc182;
+  width: 400px;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 11%;
+}
+
+.contacts-main__wrap-items {
+  padding-left: 35px;
+  color: #ffffff;
+  font-family: 'RobotoLight';
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 23px;
+}
+
+.contacts-main__img {
+  position: absolute;
+  bottom: 0;
+}
+
+.contacts-main__text {
+  padding: 32px;
+  padding-bottom: 15px;
+  color: #ffffff;
+  font-family: 'RobotoLight';
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 23px;
+}
+
+.contacts-main__items {
+  margin-left: 0;
+}
+
+.contacts-main__items-icon {
+  margin-right: 9px;
+}
+
+.contacts-feedback {
+  margin-bottom: 49px;
+}
+
+.contacts-feedback__title {
+  font-family: 'RobotoLight' !important;
+  margin-bottom: 23px;
+}
+
+.contacts-feedback__media {
+  width: 230px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  height: 44px;
+  margin-bottom: 3px;
+}
+
+.contacts-feedback__media-icon {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 40px;
+  border-right: 1px solid #94acc8;
+}
+
+.contacts-feedback__media-text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #ffffff;
+  font-family: 'RobotoLight';
+  font-size: 13px;
+  font-weight: 500;
+  line-height: 20px;
+  text-transform: uppercase;
+  padding-left: 14px;
+}
+
+.vk {
+  background-color: #4c75a3;
+}
+
+.fb {
+  background-color: #3b5a9b;
+}
+
+.google {
+  background-color: #dc4a38;
+}
+
+.contacts-input {
+  width: 410px;
+  height: 53px;
+  border: 1px solid #ededed;
+  background-color: #ffffff;
+  margin-bottom: 12px;
+  color: #606060;
+  font-family: "RobotoLight";
+  font-size: 12px;
+  font-weight: 300;
+  line-height: 24px;
+  padding-left: 48px;
 }
 
 @font-face {
