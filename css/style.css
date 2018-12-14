@@ -316,6 +316,7 @@
 .about-block__img {
   margin-bottom: 22px;
   max-height: 110px;
+  vertical-align: middle;
 }
 
 .about-block__items {
@@ -849,6 +850,7 @@
 .objects-block__img {
   margin-bottom: 25px;
   margin-top: auto;
+  vertical-align: middle;
 }
 
 .objects-block__items {
