@@ -1165,6 +1165,10 @@
   padding-left: 48px;
 }
 
+.contacts-textarea {
+  margin-bottom: 17px;
+}
+
 @font-face {
   font-family: 'RobotoBold';
   src: url("../fonts/RobotoBold/RobotoBold.eot");
