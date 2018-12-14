@@ -7,6 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="../css/bootstrap.min.css">
     <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/slick.css">
     <link rel="shortcut icon" href="../img/favicon.ico" type="image/x-icon">
 
     <title>Русская баня</title>
@@ -124,7 +125,41 @@
 
     <section class="portfolio">
         <div class="container">
-
+                <button class="slick-prev slick-arrow" aria-label="Previous" type="button" style=""></button>
+                <div class="slider-for__portfolio">
+                        <div class="photo">
+                            <img src="../img/portfolio/img-1.png" alt="image" draggable="false" />
+                        </div>
+                        <div class="photo">
+                            <img src="../img/portfolio/img-2.png" alt="image" draggable="false" />
+                        </div>
+                        <div class="photo">
+                            <img src="../img/portfolio/img-3.png" alt="image" draggable="false" />
+                        </div>
+                        <div class="photo">
+                            <img src="../img/portfolio/img-4.png" alt="image" draggable="false" />
+                        </div>
+                        <div class="photo">
+                            <img src="../img/portfolio/img-5.png" alt="image" draggable="false" />
+                        </div>
+                    </div>
+                    <div class="slider-nav__portfolio">
+                        <div class="photo">
+                            <img src="../img/portfolio/img-1.png" alt="image" draggable="false" />
+                        </div>
+                        <div class="photo">
+                            <img src="../img/portfolio/img-2.png" alt="image" draggable="false" />
+                        </div>
+                        <div class="photo">
+                            <img src="../img/portfolio/img-3.png" alt="image" draggable="false" />
+                        </div>
+                        <div class="photo">
+                            <img src="../img/portfolio/img-4.png" alt="image" draggable="false" />
+                        </div>
+                        <div class="photo">
+                            <img src="../img/portfolio/img-5.png" alt="image" draggable="false" />
+                        </div>
+                    </div>
         </div>
     </section>
 
@@ -196,7 +231,7 @@
                 </form>
             </div>
         </div>
-            <button type="submit" class="button feedback-button">арендовать баню!</button>
+        <button type="submit" class="button feedback-button">арендовать баню!</button>
         </div>
     </section>
 
@@ -239,6 +274,28 @@
             </p>
         </div>
     </footer>
+
+    <script src="../js/jquery.min.js"></script>
+    <script src="../js/slick.min.js"></script>
+
+    <script>
+        $('.slider-for__portfolio').slick({
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            arrows: true,
+            fade: true,
+            asNavFor: '.slider-nav__portfolio',
+            autoplay: false
+        });
+        $('.slider-nav__portfolio').slick({
+            slidesToShow: 5,
+            slidesToScroll: 1,
+            asNavFor: '.slider-for__portfolio',
+            dots: false,
+            centerMode: false,
+            focusOnSelect: false,
+        });
+    </script>
 </body>
 
 </html>

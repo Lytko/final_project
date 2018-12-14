@@ -46,26 +46,34 @@
         left: 15px
         bottom: 20px
 
-.owl
-    &-theme
-        margin-left: auto
-        margin-right: auto
-        margin-top: 9px
-        max-width: 400px
+.slider
+    &-for
+        width: 458px
+        margin: 0 auto 10px
+        overflow: hidden
+    &-nav
+        width: 370px
+        height: 85px
+        margin: auto
+
+.slick
+    &-arrow
+	    position: absolute
     &-prev
-        width: 6px
-        height: 25px
-        background-image: url('../img/rooms/arrow-left.png') !important
-        position: absolute 
-        bottom: 35%
+        background: url('../img/rooms/arrow-left.png') no-repeat
+        bottom: 35px
         left: -20px
-    &-next
         width: 6px
         height: 25px
-        background-image: url('../img/rooms/arrow-right.png') !important
-        position: absolute 
-        bottom: 35%
+        border: none
+    &-next
+        bottom: 35px
         right: -20px
-    &-dots
-        display: none
+        background: url('../img/rooms/arrow-right.png') no-repeat
+        width: 6px
+        height: 25px
+        border: none
+        
+.photo
+    margin-right: 10px
     
