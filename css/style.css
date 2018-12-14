@@ -1096,7 +1096,8 @@
 
 @font-face {
   font-family: 'FranklinGothicHeavyCyrillic';
-  src: url("../fonts/FranklinGothicHeavyCyrillic/FranklinGothicHeavyCyrillic.ttf") format("truetype");
+  src: url("../fonts/FranklinGothicHeavyCyrillic/FranklinGothicHeavyCyrillic.eot");
+  src: url("../fonts/FranklinGothicHeavyCyrillic/FranklinGothicHeavyCyrillic.eot?#iefix") format("embedded-opentype"), url("../fonts/FranklinGothicHeavyCyrillic/FranklinGothicHeavyCyrillic.woff") format("woff"), url("../fonts/FranklinGothicHeavyCyrillic/FranklinGothicHeavyCyrillic.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
 }
