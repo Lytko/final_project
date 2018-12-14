@@ -711,6 +711,312 @@
   display: block;
 }
 
+.bathhouse {
+  background-image: url("../img/bathhouse/bg-image.png");
+  background-size: cover;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-top: 106px;
+  padding-bottom: 110px;
+}
+
+.bathhouse-container {
+  position: relative;
+}
+
+.bathhouse-image {
+  position: absolute;
+  right: 0;
+  top: -250px;
+}
+
+.bathhouse-line {
+  width: 50%;
+  background-color: #fff;
+  margin-bottom: 0;
+}
+
+.bathhouse-button {
+  width: 198px;
+  height: 55px;
+  color: #ffffff;
+  font-family: 'RobotoRegular';
+  font-size: 13px;
+  text-transform: uppercase;
+  background-color: transparent;
+  border: 2px solid;
+  border-radius: 40px;
+}
+
+.bathhouse-button:hover {
+  background-color: #3fc380;
+  border: 2px solid transparent;
+}
+
+.bathhouse-items {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  color: #ffffff;
+}
+
+.bathhouse-items__title {
+  font-size: 113px;
+  font-weight: 400;
+  line-height: 58px;
+  text-transform: uppercase;
+  font-family: 'FranklinGothicHeavyCyrillic';
+  height: 75px;
+  margin-bottom: 30px;
+}
+
+.bathhouse-items__subtitle {
+  font-family: 'FranklinGothicHeavyCyrillic';
+  font-size: 48px;
+  font-weight: 400;
+  line-height: 24px;
+  text-transform: uppercase;
+  margin-bottom: 21px;
+}
+
+.bathhouse-text {
+  font-size: 19px;
+  font-weight: 400;
+  line-height: 26px;
+  font-family: 'Open Sans';
+  margin-bottom: 40px;
+  margin-top: 26px;
+}
+
+.bathhouse-layers__first {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.bathhouse-layers__second {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+.objects {
+  margin-top: 48px;
+  margin-bottom: 33px;
+}
+
+.objects-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 34px;
+}
+
+.objects-block__img {
+  margin-bottom: 25px;
+  margin-top: auto;
+}
+
+.objects-block__items {
+  text-align: center;
+}
+
+.objects-block__items-title {
+  font-family: "RobotoBold";
+  font-size: 17px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.objects-block__items-text {
+  font-family: "RobotoLight";
+  color: #383838;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 21px;
+  text-align: center;
+}
+
+.portfolio {
+  height: 769px;
+  background-color: #f7f9f9;
+  margin-bottom: 61px;
+}
+
+.bathhouse-about__title {
+  margin-bottom: 15px;
+}
+
+.bathhouse-about__text {
+  text-align: justify;
+  margin-bottom: 72px;
+}
+
+.feedback {
+  background-image: url("../img/feedback/bg-img-main.png");
+  background-size: cover;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-top: 94px;
+  padding-bottom: 74px;
+}
+
+.feedback-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.feedback-title {
+  font-family: "FranklinGothicHeavyCyrillic";
+  font-size: 48px;
+  font-weight: 400;
+  line-height: 24px;
+  text-transform: uppercase;
+  text-align: center;
+  color: #ffffff;
+  margin-bottom: 38px;
+}
+
+.feedback-wrap {
+  margin-bottom: 31px;
+  text-align: center;
+  color: #ffffff;
+}
+
+.feedback-wrap__title {
+  font-family: 'RobotoBold';
+  font-size: 17px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.feedback-wrap__text {
+  font-family: 'RobotoLight';
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 21px;
+}
+
+.feedback-form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.feedback-form__wrap {
+  width: 976px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.feedback-input {
+  width: 319px;
+  height: 53px;
+  border: 1px solid #ededed;
+  background-color: #ffffff;
+  margin-bottom: 12px;
+  color: #606060;
+  font-family: "RobotoLight";
+  font-size: 12px;
+  font-weight: 300;
+  line-height: 24px;
+  padding-left: 48px;
+}
+
+.feedback-input__name {
+  background: url("../img/feedback/name.png") no-repeat;
+  background-position: 16px 50%;
+  background-color: #ffffff;
+}
+
+.feedback-input__tel {
+  background: url("../img/feedback/phone.png") no-repeat;
+  background-position: 16px 50%;
+  background-color: #ffffff;
+}
+
+.feedback-input__email {
+  background: url("../img/feedback/email.png") no-repeat;
+  background-position: 16px 50%;
+  background-color: #ffffff;
+}
+
+.feedback-textarea {
+  width: 100%;
+  height: 96px;
+  border: 1px solid #ededed;
+  color: #606060;
+  font-family: "RobotoLight";
+  font-size: 12px;
+  font-weight: 300;
+  line-height: 24px;
+  background: url("../img/feedback/text.png") no-repeat;
+  background-color: #ffffff;
+  background-position: 16px 5px;
+  padding-left: 48px;
+}
+
+.feedback-button {
+  margin-top: 28px;
+}
+
+.feedback-button:hover {
+  color: #606060 !important;
+  border: 2px solid #606060 !important;
+  background-color: #fff !important;
+}
+
+.line-btm {
+  margin-top: 0;
+}
+
 @font-face {
   font-family: 'RobotoBold';
   src: url("../fonts/RobotoBold/RobotoBold.eot");
@@ -783,6 +1089,13 @@
   font-style: normal;
 }
 
+@font-face {
+  font-family: 'FranklinGothicHeavyCyrillic';
+  src: url("../fonts/FranklinGothicHeavyCyrillic/FranklinGothicHeavyCyrillic.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
 * {
   text-decoration: none;
 }
@@ -791,7 +1104,7 @@ img {
   max-width: 100%;
 }
 
-button, input, a {
+button, input, a, textarea {
   outline: none !important;
   cursor: pointer !important;
 }
