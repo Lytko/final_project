@@ -312,6 +312,7 @@
 
     <script src="../js/jquery.min.js"></script>
     <script src="../js/slick.min.js"></script>
+    <script src="../js/jquery.maskedinput.min.js"></script>
 
     <script>
         $('.slider-for').slick({
@@ -344,6 +345,13 @@
                 $('.modal').removeClass('modal_visible');
                 $('.modal').addClass('modal_hidden');
             });
+        });
+    </script>
+
+    <script>
+        jQuery(function ($) {
+            $("input[type='tel']").mask("+7 (999) 999-9999");
+
         });
     </script>
 </body>
