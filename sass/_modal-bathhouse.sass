@@ -1,0 +1,82 @@
+.modal
+    position: fixed
+    width: 100%
+    height: 100%
+    background-color: rgba(#000000, 0.52)
+    left: 0
+    top: 0
+    z-index: 99
+    display: flex
+    &_hidden
+        display: none
+    &_visible
+        display: flex
+    &-close
+        position: absolute
+        top: 10px
+        right: 10px
+        color: #ffffff
+        z-index: 99
+        &:hover
+            cursor: pointer
+    &-input
+        width: 367px
+        height: 53px
+        border: 1px solid #ededed
+        background-color: #ffffff
+        margin-bottom: 12px
+        color: #606060
+        font-family: "RobotoLight"
+        font-size: 12px
+        font-weight: 300
+        line-height: 24px
+        padding-left: 48px
+    &-textarea
+        width: 100%
+        height: 96px
+        border: 1px solid #ededed
+        color: #606060
+        font-family: "RobotoLight"
+        font-size: 12px
+        font-weight: 300
+        line-height: 24px
+        background: url('../img/feedback/text.png') no-repeat 
+        background-color: #ffffff
+        background-position: 16px 16px
+        padding-left: 48px
+        padding-top: 16px
+    &-button
+        margin: 30px auto
+
+.modal-bathhouse
+    &__container
+        width: 1140px
+        background-color: #fff
+        margin: auto
+        display: flex
+        justify-content: center
+        align-items: center
+        position: relative
+    &__wrap
+        width: 100%
+        height: 100%
+    &__title
+        background-color: #3fc380 !important
+        text-align: center
+        color: #ffffff
+        font-family: 'RobotoRegular'
+        font-size: 20px
+        font-weight: 400
+        line-height: 23px
+        text-transform: uppercase
+        padding: 20px 
+    &__form
+        display: flex
+        flex-direction: column
+        justify-content: space-between
+        padding-top: 30px
+        background-color: #f1f1f1
+    &__wrap
+        margin-right: auto
+        margin-left: auto
+        

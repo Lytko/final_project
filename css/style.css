@@ -1187,6 +1187,128 @@
   margin-bottom: 17px;
 }
 
+.modal {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.52);
+  left: 0;
+  top: 0;
+  z-index: 99;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.modal_hidden {
+  display: none;
+}
+
+.modal_visible {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.modal-close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  color: #ffffff;
+  z-index: 99;
+}
+
+.modal-close:hover {
+  cursor: pointer;
+}
+
+.modal-input {
+  width: 367px;
+  height: 53px;
+  border: 1px solid #ededed;
+  background-color: #ffffff;
+  margin-bottom: 12px;
+  color: #606060;
+  font-family: "RobotoLight";
+  font-size: 12px;
+  font-weight: 300;
+  line-height: 24px;
+  padding-left: 48px;
+}
+
+.modal-textarea {
+  width: 100%;
+  height: 96px;
+  border: 1px solid #ededed;
+  color: #606060;
+  font-family: "RobotoLight";
+  font-size: 12px;
+  font-weight: 300;
+  line-height: 24px;
+  background: url("../img/feedback/text.png") no-repeat;
+  background-color: #ffffff;
+  background-position: 16px 16px;
+  padding-left: 48px;
+  padding-top: 16px;
+}
+
+.modal-button {
+  margin: 30px auto;
+}
+
+.modal-bathhouse__container {
+  width: 1140px;
+  background-color: #fff;
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+}
+
+.modal-bathhouse__wrap {
+  width: 100%;
+  height: 100%;
+}
+
+.modal-bathhouse__title {
+  background-color: #3fc380 !important;
+  text-align: center;
+  color: #ffffff;
+  font-family: 'RobotoRegular';
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 23px;
+  text-transform: uppercase;
+  padding: 20px;
+}
+
+.modal-bathhouse__form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-top: 30px;
+  background-color: #f1f1f1;
+}
+
+.modal-bathhouse__wrap {
+  margin-right: auto;
+  margin-left: auto;
+}
+
 @font-face {
   font-family: 'RobotoBold';
   src: url("../fonts/RobotoBold/RobotoBold.eot");
