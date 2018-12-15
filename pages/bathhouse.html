@@ -125,41 +125,53 @@
 
     <section class="portfolio">
         <div class="container">
-                <button class="slick-prev slick-arrow" aria-label="Previous" type="button" style=""></button>
-                <div class="slider-for__portfolio">
-                        <div class="photo">
-                            <img src="../img/portfolio/img-1.png" alt="image" draggable="false" />
-                        </div>
-                        <div class="photo">
-                            <img src="../img/portfolio/img-2.png" alt="image" draggable="false" />
-                        </div>
-                        <div class="photo">
-                            <img src="../img/portfolio/img-3.png" alt="image" draggable="false" />
-                        </div>
-                        <div class="photo">
-                            <img src="../img/portfolio/img-4.png" alt="image" draggable="false" />
-                        </div>
-                        <div class="photo">
-                            <img src="../img/portfolio/img-5.png" alt="image" draggable="false" />
-                        </div>
+
+            <div class="slider-for slider-for__portfolio">
+                <div class="photo">
+                    <img src="../img/portfolio/img-1.png" alt="image" draggable="false" />
+                </div>
+                <div class="photo">
+                    <img src="../img/portfolio/img-2.png" alt="image" draggable="false" />
+                </div>
+                <div class="photo">
+                    <img src="../img/portfolio/img-3.png" alt="image" draggable="false" />
+                </div>
+                <div class="photo">
+                    <img src="../img/portfolio/img-4.png" alt="image" draggable="false" />
+                </div>
+                <div class="photo">
+                    <img src="../img/portfolio/img-5.png" alt="image" draggable="false" />
+                </div>
+                <div class="photo">
+                    <img src="../img/portfolio/img-6.png" alt="image" draggable="false" />
+                </div>
+                <div class="photo">
+                        <img src="../img/portfolio/img-7.png" alt="image" draggable="false" />
                     </div>
-                    <div class="slider-nav__portfolio">
-                        <div class="photo">
-                            <img src="../img/portfolio/img-1.png" alt="image" draggable="false" />
-                        </div>
-                        <div class="photo">
-                            <img src="../img/portfolio/img-2.png" alt="image" draggable="false" />
-                        </div>
-                        <div class="photo">
-                            <img src="../img/portfolio/img-3.png" alt="image" draggable="false" />
-                        </div>
-                        <div class="photo">
-                            <img src="../img/portfolio/img-4.png" alt="image" draggable="false" />
-                        </div>
-                        <div class="photo">
-                            <img src="../img/portfolio/img-5.png" alt="image" draggable="false" />
-                        </div>
+            </div>
+            <div class="slider-nav slider-nav__portfolio">
+                <div class="photo">
+                    <img src="../img/portfolio/img-1.png" alt="image" draggable="false" />
+                </div>
+                <div class="photo">
+                    <img src="../img/portfolio/img-2.png" alt="image" draggable="false" />
+                </div>
+                <div class="photo">
+                    <img src="../img/portfolio/img-3.png" alt="image" draggable="false" />
+                </div>
+                <div class="photo">
+                    <img src="../img/portfolio/img-4.png" alt="image" draggable="false" />
+                </div>
+                <div class="photo">
+                    <img src="../img/portfolio/img-5.png" alt="image" draggable="false" />
+                </div>
+                <div class="photo">
+                    <img src="../img/portfolio/img-6.png" alt="image" draggable="false" />
+                </div>
+                <div class="photo">
+                        <img src="../img/portfolio/img-7.png" alt="image" draggable="false" />
                     </div>
+            </div>
         </div>
     </section>
 
@@ -279,21 +291,23 @@
     <script src="../js/slick.min.js"></script>
 
     <script>
-        $('.slider-for__portfolio').slick({
+        $('.slider-for').slick({
             slidesToShow: 1,
             slidesToScroll: 1,
             arrows: true,
             fade: true,
-            asNavFor: '.slider-nav__portfolio',
-            autoplay: false
+            asNavFor: '.slider-nav',
+            autoplay: false,
+            infinity: true
         });
-        $('.slider-nav__portfolio').slick({
-            slidesToShow: 5,
+        $('.slider-nav').slick({
+            slidesToShow: 6,
             slidesToScroll: 1,
-            asNavFor: '.slider-for__portfolio',
+            asNavFor: '.slider-for',
             dots: false,
             centerMode: false,
             focusOnSelect: false,
+            infinity: true
         });
     </script>
 </body>

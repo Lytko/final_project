@@ -884,56 +884,17 @@
 
 .portfolio {
   background-color: #f7f9f9;
-  padding-bottom: 65px;
+  padding-bottom: 71px;
   padding-top: 71px;
   margin-bottom: 61px;
-  z-index: 1;
 }
 
 .slider-for__portfolio {
-  width: 1140px;
-  margin: 0px auto 10px;
-  overflow: hidden;
-  z-index: 1;
+  width: 100%;
 }
 
 .slider-nav__portfolio {
-  width: 1050px;
-  height: 85px;
-  margin: auto;
-  z-index: 0;
-}
-
-.slick-arrow {
-  position: absolute;
-}
-
-.slick-prev {
-  background: url("../img/rooms/arrow-left.png") no-repeat;
-  bottom: -15px;
-  z-index: 2 !important;
-  left: 0;
-  width: 6px;
-  height: 25px;
-  border: none;
-}
-
-.slick-next {
-  bottom: -30px;
-  right: 0;
-  background: url("../img/rooms/arrow-right.png") no-repeat;
-  width: 6px;
-  height: 25px;
-  border: none;
-}
-
-.slick-list {
-  z-index: 0 !important;
-}
-
-.photo {
-  margin-right: 10px;
-  z-index: 0;
+  width: 1000px;
 }
 
 .bathhouse-about__title {
