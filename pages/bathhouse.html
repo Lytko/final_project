@@ -68,17 +68,18 @@
     </section>
 
     <div class="modal modal-bathhouse modal_hidden" id="modal-feedback">
+        <div class="container modal-container">
         <div class="modal-bathhouse__container">
             <div class="modal-close">&#10006;</div>
             <div class="modal-bathhouse__wrap column">
                 <div class="modal-bathhouse__title col-12">Арендовать баню прямо сейчас!</div>
                 <div class="modal-bathhouse__form col-12">
-                    <form action="#">
-                        <input type="text" name="user_name" class="input input-name modal-input feedback-input__name"
+                    <form action="#" class="modal-bathhouse__form-wrap">
+                        <input type="text" name="user_name" class="input input-name modal-input feedback-input__name modal-bathhouse__name"
                             placeholder="Ваше имя...">
                         <input type="email" name="user_email" class="input input-email modal-input feedback-input__email"
                             placeholder="Ваш e-mail...">
-                        <input type="tel" name="user_tel" class="input input-tel modal-input feedback-input__tel"
+                        <input type="tel" name="user_tel" class="input input-tel modal-input feedback-input__tel modal-bathhouse__tel"
                             placeholder="Ваш телефон...">
                     </form>
                     <form action="#">
@@ -88,6 +89,7 @@
                 </div>
             </div>
         </div>
+    </div>
     </div>
 
     <hr class="line">
@@ -200,7 +202,7 @@
 
     <section class="bathhouse-about">
         <div class="container">
-            <div class="bathhouse-about__title title">Русская баня - отдых душой и телом!</div>
+            <div class="bathhouse-about__title title">Русская баня - отдых душой&nbsp;и&nbsp;телом!</div>
             <div class="bathhouse-about__text text">Русская баня давно завоевала мировое признание. Миллионы людей
                 постоянно прибегают к этому простому и надежному способу поддерживать здоровье, красоту, жизненный
                 тонус и хорошее настроение. В X веке в Киево-Печерском монастыре монахи, узнав о пользе бани из древних
@@ -236,7 +238,7 @@
             <div class="feedback-title">закажите отдых прямо сейчас!</div>
             <div class="feedback-wrap row">
                 <div class="feedback-block col-4">
-                    <h3 class="feedback-wrap__title">Максимальное кол-во людей</h3>
+                    <h3 class="feedback-wrap__title">Максимальное кол&#8209;во людей</h3>
                     <p class="feedback-wrap__text">Отдыхайте с пользой всей своей компанией <br> у нас (6-7 человек)</p>
                 </div>
                 <div class="feedback-block col-4">
@@ -251,8 +253,8 @@
                 </div>
             </div>
             <div class="feedback-form__wrap">
+                
                 <form action="#" class="feedback-form">
-                    <div class="feedback-input__wrap">
                         <input type="text" name="user_name" class="input input-name feedback-input feedback-input__name"
                             placeholder="Ваше имя...">
                         <input type="tel" name="user_phone" class="input input-tel feedback-input feedback-input__tel"
@@ -260,13 +262,15 @@
                         <input type="email" name="user_email" class="input input-email feedback-input feedback-input__email"
                             placeholder="Ваш e-mail...">
                 </form>
-                <form action="#">
+                <form action="#" class="feedback-form__text">
                     <textarea name="comment" cols="118" rows="3" class="feedback-textarea" placeholder="Ваше сообщение..."></textarea>
-                    <br>
+                    <br> 
+                    <button type="submit" class="button feedback-button">арендовать баню!</button>
                 </form>
+            
             </div>
         </div>
-        <button type="submit" class="button feedback-button">арендовать баню!</button>
+        
         </div>
     </section>
 

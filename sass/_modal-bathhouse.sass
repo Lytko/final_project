@@ -7,6 +7,8 @@
     top: 0
     z-index: 99
     display: flex
+    &-container
+        margin: auto
     &_hidden
         display: none
     &_visible
@@ -20,7 +22,7 @@
         &:hover
             cursor: pointer
     &-input
-        width: 367px
+        width: 32%
         height: 53px
         border: 1px solid #ededed
         background-color: #ffffff
@@ -50,7 +52,7 @@
 
 .modal-bathhouse
     &__container
-        width: 1140px
+        width: 100%
         background-color: #fff
         margin: auto
         display: flex
@@ -76,7 +78,14 @@
         justify-content: space-between
         padding-top: 30px
         background-color: #f1f1f1
+        &-wrap
+            display: flex
+            justify-content: space-between
     &__wrap
         margin-right: auto
         margin-left: auto
+    &__tel
+        margin-right: 0
+    &__name
+        margin-right: 0
         
