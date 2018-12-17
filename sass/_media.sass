@@ -31,6 +31,14 @@
             &-text
                 min-height: 165px
                 padding-right: 20px
+                min-height: 200px
+    .info
+        &-wrap
+            display: flex
+            align-items: center
+
+    .choice2-block__second-wrap
+        top: 10%
             
 
 @media (max-width: 991px)
@@ -84,9 +92,18 @@
             &__email
                 width: 100%
     .attraction
+        &__items
+            width: 100%
+        &__wrap
+            display: flex
+            flex-wrap: wrap
+            justify-content: space-around
         &-main
             &__title
                 text-align: center
+
+    .attraction__block-img__last
+        display: none
     .contacts
         &-input
             width: 100%
@@ -107,7 +124,50 @@
     .first-attraction
         &__title
             text-align: center
-
+    .main
+        &-items
+            &__title
+                font-size: 130px !important
+        &-layers
+            display: none
+        &-image
+            display: none
+    .info
+        &-block
+            &__second
+                display: none
+    .about
+        &-wrap
+            display: flex
+            flex-wrap: wrap
+            justify-content: center
+    .choice-block__first-img
+        display: none
+    .choice2-block__first-img
+        display: none
+    .choice
+        margin-bottom: 0px
+        &:before
+            width: 50%
+        &-block
+            &__first
+                &-title
+                    display: none
+            &__second
+                &-wrap
+                    left: 50%
+                    padding-left: 40px
+    .choice2
+        &:before
+            width: 50%
+        &-block
+            &__first
+                &-title
+                    display: none
+            &__second
+                &-wrap
+                    right: 50%
+                    padding-left: 40px  
 
 
 @media (max-width: 767px)
@@ -169,6 +229,9 @@
             &__tel
                 margin-right: 0px
     .attraction
+        &__items
+            &-title
+                line-height: 35px !important
         &__wrap
             display: flex
             justify-content: center
@@ -217,6 +280,50 @@
         display: flex
         justify-content: center
 
+    .main
+        &-items
+            &__title
+                font-size: 90px !important
+                margin-bottom: 0
+    .choice
+        margin-bottom: 42px
+        height: 330px
+        &:before
+            width: 100%
+        &-block
+            &__second
+                &-wrap
+                    left: 0
+                    width: 100%
+                    padding-left: 40px
+                    text-align: center
+                    top: 10%
+                &-text
+                    text-align: center
+    .choice2
+        height: 330px
+        &:before
+            width: 100%
+        &-block
+            &__second
+                &-wrap
+                    left: 0
+                    width: 100%
+                    padding-left: 40px
+                    text-align: center
+                    top: 10%
+                &-text
+                    text-align: center
+                    
+
+
+@media (max-width: 603px) 
+    .choice
+        height: 380px
+
+@media (max-width: 600px) 
+    .choice2
+        height: 380px
 
 @media (max-width: 575px)          
     .idea
@@ -279,6 +386,8 @@
                 font-size: 19px
         &__wrap
             margin-bottom: 20px
+    .attraction__block-img__last
+        display: block
     .contacts-main
         &__img
             display: none
@@ -302,6 +411,20 @@
             padding-bottom: 0
             display: flex
             justify-content: center
+    .main
+        padding-top: 100px
+        padding-bottom: 100px
+        &-items
+            &__title
+                font-size: 70px !important
+                height: 80px
+        &-text
+            font-size: 15px
+    .about
+        &-block
+            &__items
+                &-text
+                    width: 280px
 
 @media (max-width: 500px) 
     .portfolio
@@ -314,6 +437,8 @@
     .modal-bathhouse
         &__title
             font-size: 15px
+    .choice2
+        height: 400px
             
 @media (max-width: 450px) 
     .extra
@@ -345,6 +470,28 @@
     .attraction
         &__block
             max-width: 100% !important
+    .main
+        &-items
+            &__title
+                font-size: 60px !important
+                height: 60px
+    .choice
+        &-block
+            &__second
+                &-title
+                    font-size: 25px !important
+                &-text
+                    font-size: 13px !important
+                    line-height: 22px !important
+    .choice2
+        height: 380px
+        &-block
+            &__second
+                &-title
+                    font-size: 25px !important
+                &-text
+                    font-size: 13px !important
+                    line-height: 22px !important
 
 @media (max-width: 400px) 
     .idea
@@ -381,6 +528,11 @@
         &-title
             font-size: 34px
     .attraction
+        &__items
+            &-title
+                font-size: 25px !important
+            &-text
+                font-size: 14px
         &__block
             padding-right: 20px
             padding-left: 20px
@@ -391,7 +543,21 @@
         &-close
             top: 5px
             right: 5px
+    .main
+        &-items
+            &__title
+                font-size: 50px !important
+    .choice2
+        height: 400px
+    
+@media (max-width: 366px)        
+    .choice2
+        height: 430px
 
+@media (max-width: 355px)        
+    .choice
+        height: 450px
+    
 @media (max-width: 350px) 
     .extra
         &-title
@@ -404,6 +570,9 @@
                     font-size: 15px 
                     
     .attraction
+        &__items
+            &-title
+                font-size: 22px !important
         &-main
             &__title
                 font-size: 20px !important
@@ -416,4 +585,10 @@
     .first-attraction
         &__title
             font-size: 22px !important
+ 
+@media (max-width: 321px)    
+    .choice
+        height: 500px
+    .choice2
+        height: 480px
 
