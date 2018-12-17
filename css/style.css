@@ -509,6 +509,7 @@
   padding-left: 20px;
   border-bottom: 3px solid #eeeeee;
   margin-bottom: 40px;
+  cursor: pointer;
 }
 
 .attraction__block-text:hover {
@@ -557,10 +558,7 @@
 
 .rooms-block {
   margin-top: 29px;
-}
-
-.rooms-block__second {
-  height: 350px;
+  margin-bottom: 28px;
 }
 
 .rooms-block__second-title {
@@ -598,6 +596,7 @@
   font-size: 14px;
   font-weight: 400;
   line-height: 22px;
+  margin-bottom: 25px;
 }
 
 .rooms-block__second-price span {
@@ -609,16 +608,12 @@
   color: #3fc380;
 }
 
-.rooms-button {
-  position: absolute;
-  left: 15px;
-  bottom: 20px;
-}
-
 .slider-for {
   width: 458px;
-  margin: 0 auto 10px;
+  margin-right: auto;
+  margin-left: auto;
   overflow: hidden;
+  margin-bottom: 10px;
 }
 
 .slider-nav {
@@ -634,7 +629,7 @@
 .slick-prev {
   background: url("../img/rooms/arrow-left.png") no-repeat;
   bottom: 35px;
-  left: -20px;
+  left: -10px;
   width: 6px;
   height: 25px;
   border: none;
@@ -650,7 +645,8 @@
 }
 
 .photo {
-  margin-right: 10px;
+  padding-left: 5px;
+  padding-right: 5px;
 }
 
 .extra {
@@ -712,8 +708,7 @@
   font-size: 19px;
   font-weight: 700;
   line-height: 24px;
-  padding-left: 21px;
-  padding-top: 24px;
+  padding: 24px;
   border-bottom: 3px solid #eeeeee;
 }
 
@@ -854,16 +849,18 @@
       -ms-flex-pack: justify;
           justify-content: space-between;
   margin-bottom: 34px;
+  vertical-align: middle;
 }
 
 .objects-block__img {
   margin-bottom: 25px;
   margin-top: auto;
-  vertical-align: middle;
+  max-height: 129px;
 }
 
 .objects-block__items {
   text-align: center;
+  max-height: 100px;
 }
 
 .objects-block__items-title {
@@ -880,6 +877,11 @@
   font-weight: 300;
   line-height: 21px;
   text-align: center;
+  margin-bottom: auto;
+}
+
+img {
+  vertical-align: middle;
 }
 
 .portfolio {
@@ -890,7 +892,7 @@
 }
 
 .slider-for__portfolio {
-  width: 100%;
+  width: 100% !important;
 }
 
 .slider-nav__portfolio {
@@ -1309,6 +1311,28 @@
   margin-left: auto;
 }
 
+.first-attraction {
+  background-color: #f7f9f9;
+}
+
+.first-attraction__title {
+  padding-top: 55px;
+  margin-bottom: 42px;
+}
+
+.first-attraction__wrap {
+  padding-bottom: 60px;
+  margin-bottom: 0;
+}
+
+.first-attraction__text {
+  background-color: #fff;
+}
+
+.first-attraction__line {
+  margin-top: 0;
+}
+
 @font-face {
   font-family: 'RobotoBold';
   src: url("../fonts/RobotoBold/RobotoBold.eot");
@@ -1387,6 +1411,247 @@
   src: url("../fonts/FranklinGothicHeavyCyrillic/FranklinGothicHeavyCyrillic.eot?#iefix") format("embedded-opentype"), url("../fonts/FranklinGothicHeavyCyrillic/FranklinGothicHeavyCyrillic.woff") format("woff"), url("../fonts/FranklinGothicHeavyCyrillic/FranklinGothicHeavyCyrillic.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
+}
+
+@media (max-width: 1199px) {
+  header {
+    display: none;
+  }
+  footer {
+    display: none;
+  }
+  .extra-block__text {
+    font-size: 15px;
+    line-height: 20px;
+  }
+  .bathhouse-items__title {
+    font-size: 100px;
+    line-height: 80px;
+    margin-bottom: 130px;
+  }
+  .bathhouse-items__subtitle {
+    font-size: 35px;
+  }
+  .bathhouse-text {
+    font-size: 17px;
+  }
+  .slider-nav__portfolio {
+    width: 700px;
+  }
+  .slick-next__portfolio {
+    bottom: 35px;
+  }
+  .slick-prev__portfolio {
+    bottom: 35px;
+  }
+  .feedback {
+    display: none;
+  }
+}
+
+@media (max-width: 991px) {
+  .container {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .slider, .slick {
+    text-align: center;
+  }
+  .rooms-title {
+    text-align: center;
+  }
+  .rooms-block__first {
+    text-align: center;
+  }
+  .rooms-block__second {
+    text-align: center;
+    height: auto;
+  }
+  .rooms-block__second-title:before {
+    display: none !important;
+  }
+  .rooms-block__second-text {
+    text-align: center;
+  }
+  .extra-title {
+    text-align: center;
+  }
+  .bathhouse-layers {
+    display: none;
+  }
+  .objects-block__items {
+    margin-bottom: auto;
+  }
+  .slider-nav__portfolio {
+    width: 500px;
+  }
+}
+
+@media (max-width: 767px) {
+  .title {
+    line-height: 30px !important;
+  }
+  .idea-title {
+    text-align: center;
+  }
+  .extra-block__text {
+    padding: 24px 10px;
+  }
+  .bathhouse-items__title {
+    font-size: 90px;
+    line-height: 80px;
+    margin-bottom: 120px;
+  }
+  .bathhouse-items__subtitle {
+    font-size: 30px;
+  }
+  .bathhouse-text {
+    font-size: 17px;
+  }
+  .objects-block__items {
+    margin-bottom: auto;
+  }
+  .objects-block__items-title {
+    font-size: 14px;
+  }
+  .objects-block__items-text {
+    font-size: 13px;
+    line-height: 15px;
+  }
+  .portfolio {
+    padding-top: 40px;
+    padding-bottom: 0px;
+  }
+  .slider-nav__portfolio {
+    width: 300px;
+  }
+  .slick-next__portfolio {
+    bottom: 40px;
+  }
+  .slick-prev__portfolio {
+    bottom: 40px;
+  }
+}
+
+@media (max-width: 575px) {
+  .idea {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  .idea-title {
+    font-size: 25px !important;
+  }
+  .idea-text {
+    font-size: 14px !important;
+  }
+  .rooms-title {
+    font-size: 25px !important;
+  }
+  .slider-for {
+    width: 350px;
+  }
+  .slider-nav {
+    width: 270px;
+    height: 85px;
+  }
+  .slick-prev {
+    bottom: 47px;
+    left: -13px;
+  }
+  .slick-next {
+    bottom: 47px;
+    right: -20px;
+  }
+  .extra-wrap {
+    width: 400px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  img {
+    min-width: 100%;
+  }
+  .bathhouse {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+  .bathhouse-items__title {
+    font-size: 70px;
+    line-height: 70px;
+    margin-bottom: 100px;
+  }
+  .bathhouse-items__subtitle {
+    font-size: 30px;
+  }
+  .bathhouse-text {
+    font-size: 15px;
+  }
+  .objects-block__items {
+    width: 280px;
+  }
+}
+
+@media (max-width: 450px) {
+  .extra-title {
+    font-size: 25px !important;
+  }
+  .extra-wrap {
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  .bathhouse-items__title {
+    font-size: 50px;
+    line-height: 50px;
+    margin-bottom: 50px;
+  }
+  .bathhouse-items__subtitle {
+    font-size: 30px;
+    line-height: 35px;
+  }
+  .bathhouse-text {
+    font-size: 15px;
+    line-height: 20px;
+  }
+}
+
+@media (max-width: 400px) {
+  .idea-title {
+    font-size: 22px !important;
+  }
+  .rooms-title {
+    font-size: 20px !important;
+  }
+  .rooms-block__second-text {
+    font-size: 12px;
+    line-height: 20px;
+  }
+  .slider-for {
+    width: 280px;
+  }
+  .slider-nav {
+    width: 220px;
+    height: 85px;
+  }
+  .slick-prev {
+    bottom: 53px;
+    left: -13px;
+  }
+  .slick-next {
+    bottom: 53px;
+    right: -22px;
+  }
+  .extra-block__wrap:after {
+    font-size: 17px;
+  }
+}
+
+@media (max-width: 350px) {
+  .extra-title {
+    font-size: 22px !important;
+  }
+  .extra-block__wrap:after {
+    font-size: 15px;
+  }
 }
 
 * {

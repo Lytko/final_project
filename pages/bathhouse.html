@@ -59,10 +59,10 @@
                 <button type="submit" id="rent-bathhouse" class="bathhouse-button">арендовать баню!</button>
             </div>
         </div>
-        <div class="bathhouse-layers__first">
+        <div class="bathhouse-layers__first bathhouse-layers">
             <img src="../img/bathhouse/layers-first.png" alt="">
         </div>
-        <div class="bathhouse-layers__second">
+        <div class="bathhouse-layers__second bathhouse-layers">
             <img src="../img/bathhouse/layers-second.png" alt="">
         </div>
     </section>
@@ -95,14 +95,14 @@
     <section class="objects">
         <div class="container">
             <div class="objects-wrap row">
-                <div class="objects-block col-4">
+                <div class="objects-block col-12 col-sm-6 col-md-6 col-lg-4 col-xl-4">
                     <div class="objects-block__img"><img src="../img/objects/img-1.png" alt=""></div>
                     <div class="objects-block__items">
                         <h3 class="objects-block__items-title">Парилка из душистой липы</h3>
                         <p class="objects-block__items-text">Придаст вашему отдыху в русской бане неповторимые ощущения</p>
                     </div>
                 </div>
-                <div class="objects-block col-4">
+                <div class="objects-block col-12 col-sm-6 col-md-6 col-lg-4 col-xl-4">
                     <div class="objects-block__img"><img src="../img/objects/img-2.png" alt=""></div>
                     <div class="objects-block__items">
                         <h3 class="objects-block__items-title">Купель или бочка водопад</h3>
@@ -110,7 +110,7 @@
                             прохладную чистую воду </p>
                     </div>
                 </div>
-                <div class="objects-block col-4">
+                <div class="objects-block col-12 col-sm-6 col-md-6 col-lg-4 col-xl-4">
                     <div class="objects-block__img"><img src="../img/objects/img-3.png" alt=""></div>
                     <div class="objects-block__items">
                         <h3 class="objects-block__items-title">Летняя комната для отдыха</h3>
@@ -118,7 +118,7 @@
                             наслаждаясь напитками </p>
                     </div>
                 </div>
-                <div class="objects-block col-4">
+                <div class="objects-block col-12 col-sm-6 col-md-6 col-lg-4 col-xl-4">
                     <div class="objects-block__img"><img src="../img/objects/img-4.png" alt=""></div>
                     <div class="objects-block__items">
                         <h3 class="objects-block__items-title">Мангал</h3>
@@ -126,15 +126,15 @@
                             можете пожарить любой шашлык</p>
                     </div>
                 </div>
-                <div class="objects-block col-4">
+                <div class="objects-block col-12 col-sm-6 col-md-6 col-lg-4 col-xl-4">
                     <div class="objects-block__img"><img src="../img/objects/img-5.png" alt=""></div>
                     <div class="objects-block__items">
-                        <h3 class="objects-block__items-title">Чаи из Крымских лечебных трав</h3>
+                        <h3 class="objects-block__items-title">Чаи из Крымских лечебных&nbsp;трав</h3>
                         <p class="objects-block__items-text">Баня - это не только парилка, а также наслаждение
                             вкуснейшими и главное полезными чаями</p>
                     </div>
                 </div>
-                <div class="objects-block col-4">
+                <div class="objects-block col-12 col-sm-6 col-md-6 col-lg-4 col-xl-4">
                     <div class="objects-block__img"><img src="../img/objects/img-6.png" alt=""></div>
                     <div class="objects-block__items">
                         <h3 class="objects-block__items-title">Комнаты для отдыха</h3>
@@ -315,23 +315,47 @@
     <script src="../js/jquery.maskedinput.min.js"></script>
 
     <script>
-        $('.slider-for').slick({
-            slidesToShow: 1,
-            slidesToScroll: 1,
-            arrows: true,
-            fade: true,
-            asNavFor: '.slider-nav',
-            autoplay: false,
-            infinity: true
-        });
-        $('.slider-nav').slick({
-            slidesToShow: 6,
-            slidesToScroll: 1,
-            asNavFor: '.slider-for',
-            dots: false,
-            centerMode: false,
-            focusOnSelect: false,
-            infinity: true
+        $(document).ready(function () {
+            $('.slider-for').slick({
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                arrows: true,
+                fade: true,
+                asNavFor: '.slider-nav',
+                autoplay: false,
+                infinity: true
+            });
+            $('.slider-nav').slick({
+                slidesToShow: 6,
+                slidesToScroll: 1,
+                asNavFor: '.slider-for',
+                dots: false,
+                centerMode: false,
+                focusOnSelect: false,
+                infinity: true,
+                responsive: [{
+                        breakpoint: 1200,
+                        settings: {
+                            slidesToShow: 4,
+                            slidesToScroll: 1
+                        }
+                    },
+                    {
+                        breakpoint: 992,
+                        settings: {
+                            slidesToShow: 3,
+                            slidesToScroll: 1
+                        }
+                    },
+                    {
+                        breakpoint: 768,
+                        settings: {
+                            slidesToShow: 2,
+                            slidesToScroll: 1
+                        }
+                    }
+                ]
+            });
         });
     </script>
 
@@ -351,7 +375,6 @@
     <script>
         jQuery(function ($) {
             $("input[type='tel']").mask("+7 (999) 999-9999");
-
         });
     </script>
 </body>
