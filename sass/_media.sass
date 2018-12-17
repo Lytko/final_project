@@ -31,7 +31,7 @@
             &-text
                 min-height: 165px
                 padding-right: 20px
-                min-height: 200px
+                
     .info
         &-wrap
             display: flex
@@ -51,7 +51,7 @@
 
     .rooms
         &-button
-            
+            position: relative
         &-title
             text-align: center
         &-block
@@ -66,6 +66,10 @@
                 &-text
                     text-align: center
     .extra
+        &-block
+            &:hover
+                & > .extra-block__wrap:after
+                    display: none
         &-title
             text-align: center
     .bathhouse
@@ -137,6 +141,7 @@
             &__second
                 display: none
     .about
+        margin-bottom: 40px
         &-wrap
             display: flex
             flex-wrap: wrap
@@ -157,6 +162,7 @@
                 &-wrap
                     left: 50%
                     padding-left: 40px
+                    top: 10%
     .choice2
         &:before
             width: 50%
@@ -285,45 +291,45 @@
             &__title
                 font-size: 90px !important
                 margin-bottom: 0
+
     .choice
-        margin-bottom: 42px
-        height: 330px
-        &:before
-            width: 100%
-        &-block
-            &__second
-                &-wrap
-                    left: 0
-                    width: 100%
-                    padding-left: 40px
-                    text-align: center
-                    top: 10%
-                &-text
-                    text-align: center
+        display: none
     .choice2
-        height: 330px
-        &:before
-            width: 100%
-        &-block
-            &__second
-                &-wrap
-                    left: 0
-                    width: 100%
-                    padding-left: 40px
-                    text-align: center
-                    top: 10%
-                &-text
-                    text-align: center
+        display: none
                     
-
-
-@media (max-width: 603px) 
-    .choice
-        height: 380px
-
-@media (max-width: 600px) 
-    .choice2
-        height: 380px
+    .choice-copy
+        display: flex
+        flex-direction: column
+        margin-bottom: 30px !important
+        &__title
+            background-image: url('../img/choice/bg-img-first.png') 
+            height: 250px
+            width: 100%
+            font-family: 'FranklinGothicDemiC'
+            color: #ffffff
+            font-size: 80px
+            font-weight: 400
+            line-height: 90px
+            text-transform: uppercase
+            align-items: center
+            display: flex
+            justify-content: center
+            text-align: center
+        &__container
+            background-color: #f7f9f9
+            width: 100%
+            text-align: center
+        &__second
+            &-title
+                margin-top: 20px
+                margin: 20px
+            &-text
+                text-align: justify
+                margin-bottom: 20px
+        &__button
+            margin-bottom: 30px
+    .choice2-copy__title
+        background-image: url('../img/choice/bg-image-second.png')
 
 @media (max-width: 575px)          
     .idea
@@ -437,8 +443,18 @@
     .modal-bathhouse
         &__title
             font-size: 15px
-    .choice2
-        height: 400px
+
+@media (max-width: 480px) 
+    .slider
+        &-for
+            overflow: visible !important
+        &-nav
+            display: none !important
+    .slick
+        &-arrow
+            bottom: 85px
+    .portfolio
+        padding-bottom: 30px
             
 @media (max-width: 450px) 
     .extra
@@ -475,23 +491,21 @@
             &__title
                 font-size: 60px !important
                 height: 60px
-    .choice
-        &-block
-            &__second
-                &-title
-                    font-size: 25px !important
-                &-text
-                    font-size: 13px !important
-                    line-height: 22px !important
-    .choice2
-        height: 380px
-        &-block
-            &__second
-                &-title
-                    font-size: 25px !important
-                &-text
-                    font-size: 13px !important
-                    line-height: 22px !important
+    .choice-copy
+        &__title
+            font-size: 60px !important
+            line-height: 60px !important
+        &__second
+            &-title
+                font-size: 25px !important
+            &-text
+                font-size: 14px !important
+                line-height: 20px !important
+    .slick-prev__portfolio
+        bottom: 46% !important
+    .slick-next__portfolio
+        bottom: 44% !important
+
 
 @media (max-width: 400px) 
     .idea
@@ -512,12 +526,8 @@
             width: 220px
             height: 85px
     .slick
-        &-prev
-            bottom: 53px
-            left: -13px
-        &-next
-            bottom: 53px
-            right: -22px
+        &-arrow
+            bottom: 68px
 
     .extra
         &-block
@@ -547,17 +557,7 @@
         &-items
             &__title
                 font-size: 50px !important
-    .choice2
-        height: 400px
-    
-@media (max-width: 366px)        
-    .choice2
-        height: 430px
 
-@media (max-width: 355px)        
-    .choice
-        height: 450px
-    
 @media (max-width: 350px) 
     .extra
         &-title
@@ -578,17 +578,11 @@
                 font-size: 20px !important
         &__block
             &-text
-                font-size: 15px
+                font-size: 20px
     .modal-bathhouse
         &__title
             padding-top: 30px
     .first-attraction
         &__title
             font-size: 22px !important
- 
-@media (max-width: 321px)    
-    .choice
-        height: 500px
-    .choice2
-        height: 480px
 
