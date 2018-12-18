@@ -120,7 +120,7 @@
                         с 20 июня до 15 сентября — 5000р <br>
                         <span><span>*</span> Все цены могут корректироваться.</span>
                     </p>
-                    <button type="submit" class="button rooms-button">Забронировать!</button>
+                    <button type="submit" id="rent" class="button rooms-button">Забронировать!</button>
                 </div>
             </div>
 
@@ -173,7 +173,7 @@
                         с 20 июня до 15 сентября — 5000р <br>
                         <span><span>*</span> Все цены могут корректироваться.</span>
                     </p>
-                    <button type="submit" class="button rooms-button">Забронировать!</button>
+                    <button type="submit" id="rent2" class="button rooms-button">Забронировать!</button>
                 </div>
             </div>
 
@@ -226,7 +226,7 @@
                         с 20 июня до 15 сентября — 2500р <br>
                         <span><span>*</span> Все цены могут корректироваться.</span>
                     </p>
-                    <button type="submit" class="button rooms-button">Забронировать!</button>
+                    <button type="submit" id="rent3" class="button rooms-button">Забронировать!</button>
                 </div>
             </div>
 
@@ -278,7 +278,7 @@
                         с 20 июня до 15 сентября — 1200р <br>
                         <span><span>*</span> Все цены могут корректироваться.</span>
                     </p>
-                    <button type="submit" class="button rooms-button">Забронировать!</button>
+                    <button type="submit" id="rent4" class="button rooms-button">Забронировать!</button>
                 </div>
             </div>
             <hr class="second-line">
@@ -329,7 +329,7 @@
                         с 20 июня до 15 сентября — 400р <br>
                         <span><span>*</span> Все цены могут корректироваться.</span>
                     </p>
-                    <button type="submit" class="button rooms-button">Забронировать!</button>
+                    <button type="submit" id="rent5" class="button rooms-button">Забронировать!</button>
                 </div>
             </div>
         </div>
@@ -408,6 +408,31 @@
         <hr class="line">
 
     </section>
+
+    <div class="modal modal-bathhouse modal_hidden" id="modal-feedback">
+        <div class="container modal-container">
+            <div class="modal-bathhouse__container">
+                <div class="modal-close">&#10006;</div>
+                <div class="modal-bathhouse__wrap column">
+                    <div class="modal-bathhouse__title col-12">Арендовать номер прямо сейчас!</div>
+                    <div class="modal-bathhouse__form col-12">
+                        <form action="#" class="modal-bathhouse__form-wrap">
+                            <input type="text" name="user_name" class="input input-name modal-input feedback-input__name modal-bathhouse__name"
+                                placeholder="Ваше имя...">
+                            <input type="email" name="user_email" class="input input-email modal-input feedback-input__email"
+                                placeholder="Ваш e-mail...">
+                            <input type="tel" name="user_tel" class="input input-tel modal-input feedback-input__tel modal-bathhouse__tel"
+                                placeholder="Ваш телефон...">
+                        </form>
+                        <form action="#">
+                            <textarea name="comment" cols="100" rows="3" class="modal-textarea" placeholder="Ваше сообщение..."></textarea>
+                        </form>
+                        <button type="submit" class="button modal-button">Забронировать!</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <footer class="footer">
         <div class="container column">
@@ -491,6 +516,19 @@
             centerMode: false,
             focusOnSelect: false,
             infinity: true
+        });
+    </script>
+
+    <script>
+        $(document).ready(function () {
+            $('#rent, #rent2, #rent3, #rent4, #rent5').on('click', function () {
+                $('#modal-feedback').removeClass('modal_hidden');
+                $('#modal-feedback').addClass('modal_visible');
+            });
+            $('.modal-close').on('click', function () {
+                $('.modal').removeClass('modal_visible');
+                $('.modal').addClass('modal_hidden');
+            });
         });
     </script>
 

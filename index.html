@@ -66,7 +66,7 @@
                         города. Мы предлагаем Вам отдохнуть в самом сердце Балаклавы, невероятно
                         живописном месте – балке Кефало-вриси.</p>
                 </div>
-                <button type="submit" class="main-button">Арендовать номер!</button>
+                <button type="submit" id="rent" class="main-button">Арендовать номер!</button>
             </div>
         </div>
         <div class="main-layers__first main-layers">
@@ -76,6 +76,31 @@
             <img src="img/main/layers-second.png" alt="">
         </div>
     </section>
+
+    <div class="modal modal-bathhouse modal_hidden" id="modal-feedback">
+        <div class="container modal-container">
+            <div class="modal-bathhouse__container">
+                <div class="modal-close">&#10006;</div>
+                <div class="modal-bathhouse__wrap column">
+                    <div class="modal-bathhouse__title col-12">Арендовать номер прямо сейчас!</div>
+                    <div class="modal-bathhouse__form col-12">
+                        <form action="#" class="modal-bathhouse__form-wrap">
+                            <input type="text" name="user_name" class="input input-name modal-input feedback-input__name modal-bathhouse__name"
+                                placeholder="Ваше имя...">
+                            <input type="email" name="user_email" class="input input-email modal-input feedback-input__email"
+                                placeholder="Ваш e-mail...">
+                            <input type="tel" name="user_tel" class="input input-tel modal-input feedback-input__tel modal-bathhouse__tel"
+                                placeholder="Ваш телефон...">
+                        </form>
+                        <form action="#">
+                            <textarea name="comment" cols="100" rows="3" class="modal-textarea" placeholder="Ваше сообщение..."></textarea>
+                        </form>
+                        <button type="submit" class="button modal-button">Забронировать!</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <hr class="line">
 
@@ -231,24 +256,21 @@
             </div>
             <div class="attraction__wrap row">
                 <div class="attraction__block col-12 col-sm-6 col-md-6 col-lg-4 col-xl-4">
-                    <div class="attraction__block-img"><img class="attraction__img" src="img/attraction/img-1.png"
-                            alt=""></div>
+                    <div class="attraction__block-img"><img class="attraction__img" src="img/attraction/img-1.png" alt=""></div>
                     <div class="attraction__block-text main-attraction__text" onclick="window.location='pages/first-attraction.html'">
                         <span class="attraction__block-title">29 Марта, 2016</span>
                         Военно-морской музей Балаклава (Музей подводных&nbsp;лодок)
                     </div>
                 </div>
                 <div class="attraction__block col-12 col-sm-6 col-md-6 col-lg-4 col-xl-4">
-                    <div class="attraction__block-img"><img class="attraction__img" src="img/attraction/img-2.png"
-                            alt=""></div>
+                    <div class="attraction__block-img"><img class="attraction__img" src="img/attraction/img-2.png" alt=""></div>
                     <div class="attraction__block-text main-attraction__text" onclick="window.location='pages/first-attraction.html'">
                         <span class="attraction__block-title">2 Апреля, 2016</span>
                         Храм Двенадцати апостолов, Балаклава
                     </div>
                 </div>
                 <div class="attraction__block col-12 col-sm-6 col-md-6 col-lg-4 col-xl-4 attraction__block-img__last">
-                    <div class="attraction__block-img"><img class="attraction__img" src="img/attraction/img-3.png"
-                            alt=""></div>
+                    <div class="attraction__block-img"><img class="attraction__img" src="img/attraction/img-3.png" alt=""></div>
                     <div class="attraction__block-text main-attraction__text" onclick="window.location='pages/first-attraction.html'">
                         <span class="attraction__block-title">8 Апреля, 2016</span>
                         Фортификационное сооружение, крепость Чембало
@@ -315,6 +337,18 @@
     <script src="js/jquery.min.js"></script>
     <script src="js/main.js"></script>
 
+    <script>
+        $(document).ready(function () {
+            $('#rent').on('click', function () {
+                $('#modal-feedback').removeClass('modal_hidden');
+                $('#modal-feedback').addClass('modal_visible');
+            });
+            $('.modal-close').on('click', function () {
+                $('.modal').removeClass('modal_visible');
+                $('.modal').addClass('modal_hidden');
+            });
+        });
+    </script>
 </body>
 
 </html>
