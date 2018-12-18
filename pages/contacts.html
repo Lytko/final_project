@@ -118,13 +118,13 @@
             <div class="contacts-feedback__wrap row">
                 <div class="form column col-12 col-sm-12 col-md-9 col-lg-9 col-xl-9">
                     <div class="contacts-feedback__title title">Обратная связь</div>
-                    <form action="#" class="contacts-feedback__form-wrap">
+                    <form action="../pages/smart.php" method="POST">
+                        <div class="contacts-feedback__form-wrap">
                         <input type="text" name="user_name" class="input input-name contacts-input feedback-input__name"
                             placeholder="Ваше имя...">
                         <input type="email" name="user_email" class="input input-email contacts-input feedback-input__email"
                             placeholder="Ваш e-mail...">
-                    </form>
-                    <form action="#">
+                        </div>
                         <textarea name="comment" cols="118" rows="3" class="feedback-textarea contacts-textarea"
                             placeholder="Ваше сообщение..."></textarea>
                         <div class="g-recaptcha" data-sitekey="6LdztYEUAAAAABIPaMIYPVVREUlL5u70G2lx2szC"></div>
@@ -216,7 +216,23 @@
 
     <script src="../js/jquery.min.js"></script>
     <script src="../js/main.js"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
 
+    <script>
+            $('form').submit(function (event) {
+                event.preventDefault();
+                $.ajax({
+                    type: "POST",
+                    url: "smart.php",
+                    data: $(this).serialize()
+                }).done(function () {
+                    $(this).find("input").val("");
+        
+                    swal("Ваша заявка отправлена!");
+                });
+                return false;
+            });
+        </script>
 </body>
 
 </html>

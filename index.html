@@ -66,7 +66,7 @@
                         города. Мы предлагаем Вам отдохнуть в самом сердце Балаклавы, невероятно
                         живописном месте – балке Кефало-вриси.</p>
                 </div>
-                <button type="submit" id="rent" class="main-button">Арендовать номер!</button>
+                <button type="submit" id="rent" onclick="window.location='pages/rooms.html'" class="main-button">Арендовать номер!</button>
             </div>
         </div>
         <div class="main-layers__first main-layers">
@@ -77,30 +77,31 @@
         </div>
     </section>
 
-    <div class="modal modal-bathhouse modal_hidden" id="modal-feedback">
+    <!-- <div class="modal modal-bathhouse modal_hidden" id="modal-feedback">
         <div class="container modal-container">
             <div class="modal-bathhouse__container">
                 <div class="modal-close">&#10006;</div>
                 <div class="modal-bathhouse__wrap column">
                     <div class="modal-bathhouse__title col-12">Арендовать номер прямо сейчас!</div>
                     <div class="modal-bathhouse__form col-12">
-                        <form action="#" class="modal-bathhouse__form-wrap">
-                            <input type="text" name="user_name" class="input input-name modal-input feedback-input__name modal-bathhouse__name"
-                                placeholder="Ваше имя...">
-                            <input type="email" name="user_email" class="input input-email modal-input feedback-input__email"
-                                placeholder="Ваш e-mail...">
-                            <input type="tel" name="user_tel" class="input input-tel modal-input feedback-input__tel modal-bathhouse__tel"
-                                placeholder="Ваш телефон...">
+                        <form action="../pages/smart.php" method="POST">
+                            <div class="modal-bathhouse__form-wrap">
+                                <input type="text" name="user_name" class="input input-name modal-input feedback-input__name modal-bathhouse__name"
+                                    placeholder="Ваше имя...">
+                                <input type="email" name="user_email" class="input input-email modal-input feedback-input__email"
+                                    placeholder="Ваш e-mail...">
+                                <input type="tel" name="user_phone" class="input input-tel modal-input feedback-input__tel modal-bathhouse__tel"
+                                    placeholder="Ваш телефон...">
+                            </div>
+                            <textarea name="comment" name="user_comment" cols="100" rows="3" class="modal-textarea"
+                                placeholder="Ваше сообщение..."></textarea>
+                            <button type="submit" class="button modal-button">арендовать номер!</button>
                         </form>
-                        <form action="#">
-                            <textarea name="comment" cols="100" rows="3" class="modal-textarea" placeholder="Ваше сообщение..."></textarea>
-                        </form>
-                        <button type="submit" class="button modal-button">Забронировать!</button>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
+    </div> -->
 
     <hr class="line">
 
@@ -336,6 +337,7 @@
 
     <script src="js/jquery.min.js"></script>
     <script src="js/main.js"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
 
     <script>
         $(document).ready(function () {
@@ -349,6 +351,23 @@
             });
         });
     </script>
+
+    <script>
+        $('form').submit(function (event) {
+            event.preventDefault();
+            $.ajax({
+                type: "POST",
+                url: "smart.php",
+                data: $(this).serialize()
+            }).done(function () {
+                $(this).find("input").val("");
+
+                swal("Ваша заявка отправлена!");
+            });
+            return false;
+        });
+    </script>
+
 </body>
 
 </html>

@@ -97,18 +97,21 @@
                 <div class="modal-bathhouse__wrap column">
                     <div class="modal-bathhouse__title col-12">Арендовать баню прямо сейчас!</div>
                     <div class="modal-bathhouse__form col-12">
-                        <form action="#" class="modal-bathhouse__form-wrap">
-                            <input type="text" name="user_name" class="input input-name modal-input feedback-input__name modal-bathhouse__name"
-                                placeholder="Ваше имя...">
-                            <input type="email" name="user_email" class="input input-email modal-input feedback-input__email"
-                                placeholder="Ваш e-mail...">
-                            <input type="tel" name="user_tel" class="input input-tel modal-input feedback-input__tel modal-bathhouse__tel"
-                                placeholder="Ваш телефон...">
+                        <form action="../pages/smart.php" method="POST">
+                            <div class="modal-bathhouse__form-wrap">
+                                <input type="text" name="user_name" class="input input-name modal-input feedback-input__name modal-bathhouse__name"
+                                    placeholder="Ваше имя...">
+                                <input type="email" name="user_email" class="input input-email modal-input feedback-input__email"
+                                    placeholder="Ваш e-mail...">
+                                <input type="tel" name="user_phone" class="input input-tel modal-input feedback-input__tel modal-bathhouse__tel"
+                                    placeholder="Ваш телефон...">
+                            </div>
+                            <textarea name="comment" name="user_comment" cols="100" rows="3" class="modal-textarea"
+                                placeholder="Ваше сообщение..."></textarea>
+                                <div class="modal-button__item">
+                            <button type="submit" class="button modal-button">арендовать баню!</button>
+                        </div>
                         </form>
-                        <form action="#">
-                            <textarea name="comment" cols="100" rows="3" class="modal-textarea" placeholder="Ваше сообщение..."></textarea>
-                        </form>
-                        <button type="submit" class="button modal-button">арендовать баню!</button>
                     </div>
                 </div>
             </div>
@@ -275,22 +278,24 @@
                         в час)</p>
                 </div>
             </div>
-            <div class="feedback-form__wrap">
+            <div class="feedback-form__wrap feedback-form__text">
 
-                <form action="#" class="feedback-form">
-                    <input type="text" name="user_name" class="input input-name feedback-input feedback-input__name"
-                        placeholder="Ваше имя...">
-                    <input type="tel" name="user_phone" class="input input-tel feedback-input feedback-input__tel"
-                        placeholder="Ваш телефон...">
-                    <input type="email" name="user_email" class="input input-email feedback-input feedback-input__email"
-                        placeholder="Ваш e-mail...">
+                <form action="../smart.php" method="POST">
+                    <div class="feedback-form">
+                        <input type="text" name="user_name" class="input input-name feedback-input feedback-input__name"
+                            placeholder="Ваше имя...">
+                        <input type="tel" name="user_phone" class="input input-tel feedback-input feedback-input__tel"
+                            placeholder="Ваш телефон...">
+                        <input type="email" name="user_email" class="input input-email feedback-input feedback-input__email"
+                            placeholder="Ваш e-mail...">
+                    </div>
+                    <div class="feedback-form__text">
+                        <textarea type="text" name="user_comment" cols="118" rows="3" class="feedback-textarea"
+                            placeholder="Ваше сообщение..."></textarea>
+                        <br>
+                        <button type="submit" class="button feedback-button">арендовать баню!</button>
+                    </div>
                 </form>
-                <form action="#" class="feedback-form__text">
-                    <textarea name="comment" cols="118" rows="3" class="feedback-textarea" placeholder="Ваше сообщение..."></textarea>
-                    <br>
-                    <button type="submit" class="button feedback-button">арендовать баню!</button>
-                </form>
-
             </div>
         </div>
 
@@ -364,6 +369,7 @@
     <script src="../js/slick.min.js"></script>
     <script src="../js/jquery.maskedinput.min.js"></script>
     <script src="../js/main.js"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
 
     <script>
         $(document).ready(function () {
@@ -407,6 +413,22 @@
                     }
                 ]
             });
+        });
+    </script>
+
+    <script>
+        $('form').submit(function (event) {
+            event.preventDefault();
+            $.ajax({
+                type: "POST",
+                url: "smart.php",
+                data: $(this).serialize()
+            }).done(function () {
+                $(this).find("input").val("");
+
+                swal("Ваша заявка отправлена!");
+            });
+            return false;
         });
     </script>
 

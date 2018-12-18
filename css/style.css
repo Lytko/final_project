@@ -1337,6 +1337,15 @@ img {
   margin: 30px auto;
 }
 
+.modal-button__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
 .modal-bathhouse__container {
   width: 100%;
   background-color: #fff;
@@ -2363,6 +2372,42 @@ img {
   .contacts-feedback__media {
     width: 250px;
   }
+}
+
+.swal-modal {
+  background-color: #3fc380;
+}
+
+.swal-text {
+  text-align: center;
+  color: #383838;
+  font-family: 'RobotoLight';
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 20px;
+}
+
+.swal-button {
+  width: 80px;
+  height: 40px;
+  color: #ffffff;
+  font-family: 'RobotoRegular';
+  font-size: 13px;
+  text-transform: uppercase;
+  background-color: #3fc380;
+  border: 2px solid transparent;
+  border-radius: 40px;
+}
+
+.swal-button:hover {
+  background-color: transparent;
+  color: #3fc380;
+  border: 2px solid;
+}
+
+.swal-footer {
+  background-color: #ffffff;
+  margin-top: 32px;
 }
 
 * {
