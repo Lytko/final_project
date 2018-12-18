@@ -62,7 +62,6 @@
 .slick-track:after
 {
     display: table;
-
     content: '';
 }
 .slick-track:after
@@ -85,6 +84,7 @@
 [dir='rtl'] .slick-slide
 {
     float: right;
+
 }
 .slick-slide img
 {
@@ -101,6 +101,7 @@
 .slick-initialized .slick-slide
 {
     display: block;
+    filter: brightness(40%);
 }
 .slick-loading .slick-slide
 {
@@ -116,4 +117,8 @@
 }
 .slick-arrow.slick-hidden {
     display: none;
+}
+
+.slick-current {
+    filter: brightness(100%) !important; 
 }
