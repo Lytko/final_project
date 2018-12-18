@@ -1132,11 +1132,12 @@ img {
 
 .contacts-main__wrap-items {
   padding-left: 35px;
-  color: #ffffff;
+  color: #ffffff !important;
   font-family: 'RobotoLight';
   font-size: 16px;
   font-weight: 400;
   line-height: 23px;
+  text-decoration: none !important;
 }
 
 .contacts-main__img {
@@ -1160,6 +1161,10 @@ img {
 
 .contacts-main__items-icon {
   margin-right: 9px;
+}
+
+.contacts-main__items-text {
+  color: #ffffff !important;
 }
 
 .contacts-feedback {
@@ -2353,7 +2358,7 @@ img {
 }
 
 * {
-  text-decoration: none;
+  text-decoration: none !important;
 }
 
 img {
@@ -2369,6 +2374,7 @@ img {
 button, input, a, textarea {
   outline: none !important;
   cursor: pointer !important;
+  text-decoration: none !important;
 }
 
 .line {
