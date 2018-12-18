@@ -1,8 +1,59 @@
 @media (max-width: 1199px)
-    header
+    .header
         display: none
-    footer
+    .footer
         display: none
+
+    .header-mobile
+        display: flex
+        padding-top: 20px
+        padding-bottom: 20px
+    .burger
+        &-logo
+            padding-right: 10px
+        &-btn
+            width: 82px
+            height: 46px
+            color: #000000 
+            font-family: 'RobotoRegular'
+            font-size: 13px
+            text-transform: uppercase
+            background-color: transparent
+            border: 2px solid #000000
+            border-radius: 5px
+        &-button
+            display: flex
+            justify-content: flex-end
+    .burger-menu
+        display: none 
+        position: absolute
+        background-color: #fff
+        z-index: 10
+        list-style: none
+        padding: 0
+        margin: 0
+        top: 43px
+        transform: translateX(0%)
+        li 
+            padding: 2rem
+            border-bottom: 1px dashed #dfdfdf
+            a 
+                font-size: 13px
+                text-decoration: none
+                text-transform: uppercase
+                color: black
+        
+    .burger-menu_active
+        display: block
+        animation-name: fadeIn
+        border: 2px solid #000000
+        z-index: 1
+
+    @keyframes fadeIn
+        from
+            opacity: 0
+        to 
+            opacity: 1
 
     .extra
         &-block
@@ -28,9 +79,11 @@
 
     .attraction
         &__block
+            object-fit: cover
             &-text
                 min-height: 165px
                 padding-right: 20px
+                
                 
     .info
         &-wrap
@@ -39,8 +92,66 @@
 
     .choice2-block__second-wrap
         top: 10%
-            
+    .main
+        &-image
+            display: none
 
+
+    .footer-mobile__footer
+        display: flex
+        padding-top: 20px
+        padding-bottom: 20px
+        background-color: #393939
+    .burger
+        &-logo__footer
+            padding-right: 10px
+        &-btn__footer
+            width: 82px
+            height: 46px
+            color: #3fc380 
+            font-family: 'RobotoRegular'
+            font-size: 13px
+            text-transform: uppercase
+            background-color: transparent
+            border: 2px solid #3fc380
+            border-radius: 5px
+        &-button__footer
+            display: flex
+            justify-content: flex-end
+    .burger-menu__footer
+        display: none 
+        position: absolute
+        background-color: #fff
+        z-index: 10
+        list-style: none
+        padding: 0
+        margin: 0
+        top: 43px
+        transform: translateY(-107%)
+        li 
+            padding: 2rem
+            border-bottom: 1px dashed #dfdfdf
+            &:last-child
+                border: none
+            a 
+                font-size: 13px
+                text-decoration: none
+                text-transform: uppercase
+                color: black
+        
+    .burger-menu_active__footer
+        display: block
+        animation-name: fadeIn
+        border: 2px solid #3fc380
+        z-index: 1
+
+    @keyframes fadeIn
+        from
+            opacity: 0
+        to 
+            opacity: 1
+
+    
 @media (max-width: 991px)
     .container
         padding-left: 20px
@@ -61,6 +172,7 @@
                 text-align: center
                 height: auto
                 &-title
+                    margin-top: 15px
                     &:before
                         display: none !important
                 &-text

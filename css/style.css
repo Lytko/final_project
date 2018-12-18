@@ -77,6 +77,10 @@
   white-space: nowrap;
 }
 
+.header-mobile {
+  display: none;
+}
+
 .footer {
   font-family: 'RobotoRegular';
   background-color: #393939;
@@ -170,6 +174,10 @@
   font-weight: 300;
   line-height: 17px;
   padding-bottom: 39px;
+}
+
+.footer-mobile__footer {
+  display: none;
 }
 
 .main {
@@ -553,6 +561,10 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+}
+
+.attraction .main-attraction__text {
+  height: 40%;
 }
 
 .idea {
@@ -1067,6 +1079,7 @@ img {
   background-position: 16px 16px;
   padding-left: 48px;
   padding-top: 16px;
+  resize: none;
 }
 
 .feedback-button {
@@ -1326,6 +1339,7 @@ img {
   background-position: 16px 16px;
   padding-left: 48px;
   padding-top: 16px;
+  resize: none;
 }
 
 .modal-button {
@@ -1505,11 +1519,85 @@ img {
 }
 
 @media (max-width: 1199px) {
-  header {
+  .header {
     display: none;
   }
-  footer {
+  .footer {
     display: none;
+  }
+  .header-mobile {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+  .burger-logo {
+    padding-right: 10px;
+  }
+  .burger-btn {
+    width: 82px;
+    height: 46px;
+    color: #000000;
+    font-family: 'RobotoRegular';
+    font-size: 13px;
+    text-transform: uppercase;
+    background-color: transparent;
+    border: 2px solid #000000;
+    border-radius: 5px;
+  }
+  .burger-button {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+  }
+  .burger-menu {
+    display: none;
+    position: absolute;
+    background-color: #fff;
+    z-index: 10;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    top: 43px;
+    -webkit-transform: translateX(0%);
+            transform: translateX(0%);
+  }
+  .burger-menu li {
+    padding: 2rem;
+    border-bottom: 1px dashed #dfdfdf;
+  }
+  .burger-menu li a {
+    font-size: 13px;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: black;
+  }
+  .burger-menu_active {
+    display: block;
+    -webkit-animation-name: fadeIn;
+            animation-name: fadeIn;
+    border: 2px solid #000000;
+    z-index: 1;
+  }
+  @-webkit-keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
   }
   .extra-block__text {
     font-size: 15px;
@@ -1535,6 +1623,10 @@ img {
   .slick-prev__portfolio {
     bottom: 35px;
   }
+  .attraction__block {
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
   .attraction__block-text {
     min-height: 165px;
     padding-right: 20px;
@@ -1549,6 +1641,79 @@ img {
   }
   .choice2-block__second-wrap {
     top: 10%;
+  }
+  .main-image {
+    display: none;
+  }
+  .footer-mobile__footer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color: #393939;
+  }
+  .burger-logo__footer {
+    padding-right: 10px;
+  }
+  .burger-btn__footer {
+    width: 82px;
+    height: 46px;
+    color: #3fc380;
+    font-family: 'RobotoRegular';
+    font-size: 13px;
+    text-transform: uppercase;
+    background-color: transparent;
+    border: 2px solid #3fc380;
+    border-radius: 5px;
+  }
+  .burger-button__footer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+  }
+  .burger-menu__footer {
+    display: none;
+    position: absolute;
+    background-color: #fff;
+    z-index: 10;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    top: 43px;
+    -webkit-transform: translateY(-107%);
+            transform: translateY(-107%);
+  }
+  .burger-menu__footer li {
+    padding: 2rem;
+    border-bottom: 1px dashed #dfdfdf;
+  }
+  .burger-menu__footer li:last-child {
+    border: none;
+  }
+  .burger-menu__footer li a {
+    font-size: 13px;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: black;
+  }
+  .burger-menu_active__footer {
+    display: block;
+    -webkit-animation-name: fadeIn;
+            animation-name: fadeIn;
+    border: 2px solid #3fc380;
+    z-index: 1;
+  }
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
   }
 }
 
@@ -1572,6 +1737,9 @@ img {
   .rooms-block__second {
     text-align: center;
     height: auto;
+  }
+  .rooms-block__second-title {
+    margin-top: 15px;
   }
   .rooms-block__second-title:before {
     display: none !important;
@@ -2208,6 +2376,10 @@ img {
   max-width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+}
+
+.photo {
+  outline: none !important;
 }
 
 button, input, a, textarea {
