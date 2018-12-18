@@ -672,15 +672,15 @@
 
 .slick-prev {
   background: url("../img/rooms/arrow-left.png") no-repeat;
-  bottom: 35px;
-  left: -10px;
+  bottom: 45px;
+  left: -12px;
   width: 6px;
   height: 25px;
   border: none;
 }
 
 .slick-next {
-  bottom: 35px;
+  bottom: 45px;
   right: -20px;
   background: url("../img/rooms/arrow-right.png") no-repeat;
   width: 6px;
@@ -941,6 +941,24 @@ img {
 
 .slider-nav__portfolio {
   width: 1000px;
+}
+
+.slick-prev__portfolio {
+  background: url("../img/rooms/arrow-left.png") no-repeat;
+  bottom: 35px;
+  left: -12px;
+  width: 6px;
+  height: 25px;
+  border: none;
+}
+
+.slick-next__portfolio {
+  bottom: 35px;
+  right: -20px;
+  background: url("../img/rooms/arrow-right.png") no-repeat;
+  width: 6px;
+  height: 25px;
+  border: none;
 }
 
 .bathhouse-about__title {
@@ -1617,11 +1635,11 @@ img {
   .slider-nav__portfolio {
     width: 700px;
   }
-  .slick-next__portfolio {
-    bottom: 35px;
-  }
   .slick-prev__portfolio {
-    bottom: 35px;
+    bottom: 30px;
+  }
+  .slick-next__portfolio {
+    bottom: 30px;
   }
   .attraction__block {
     -o-object-fit: cover;
@@ -1765,6 +1783,12 @@ img {
   }
   .slider-nav__portfolio {
     width: 500px;
+  }
+  .slick-prev__portfolio {
+    bottom: 44px;
+  }
+  .slick-next__portfolio {
+    bottom: 44px;
   }
   .feedback-title {
     font-size: 45px;
@@ -1930,11 +1954,11 @@ img {
   .slider-nav__portfolio {
     width: 300px;
   }
-  .slick-next__portfolio {
-    bottom: 40px;
-  }
   .slick-prev__portfolio {
-    bottom: 40px;
+    bottom: 60px;
+  }
+  .slick-next__portfolio {
+    bottom: 60px;
   }
   .bathhouse-about__title {
     text-align: center;
@@ -2114,11 +2138,11 @@ img {
     height: 85px;
   }
   .slick-prev {
-    bottom: 47px;
+    bottom: 57px;
     left: -13px;
   }
   .slick-next {
-    bottom: 47px;
+    bottom: 58px;
     right: -20px;
   }
   .extra-wrap {
@@ -2204,6 +2228,12 @@ img {
   }
   .about-block__items-text {
     width: 280px;
+  }
+  .slick-prev__portfolio {
+    bottom: 62px;
+  }
+  .slick-next__portfolio {
+    bottom: 62px;
   }
 }
 
