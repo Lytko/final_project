@@ -2442,6 +2442,7 @@ img {
 
 * {
   text-decoration: none !important;
+  font-weight: 300 !important;
 }
 
 img {
