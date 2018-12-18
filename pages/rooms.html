@@ -9,6 +9,26 @@
     <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="../css/slick.css">
     <link rel="shortcut icon" href="../img/favicon.ico" type="image/x-icon">
+    <script type="text/javascript">
+        (function (m, e, t, r, i, k, a) {
+            m[i] = m[i] || function () {
+                (m[i].a = m[i].a || []).push(arguments)
+            };
+            m[i].l = 1 * new Date();
+            k = e.createElement(t), a = e.getElementsByTagName(t)[0], k.async = 1, k.src = r, a.parentNode.insertBefore(
+                k, a)
+        })(window, document, "script", "https://cdn.jsdelivr.net/npm/yandex-metrica-watch/tag.js", "ym");
+        ym(51629924, "init", {
+            id: 51629924,
+            clickmap: true,
+            trackLinks: true,
+            accurateTrackBounce: true,
+            webvisor: true,
+            trackHash: true
+        });
+    </script> <noscript>
+        <div><img src="https://mc.yandex.ru/watch/51629924" style="position:absolute; left:-9999px;" alt="" /></div>
+    </noscript>
 
     <title>Номера</title>
 </head>
@@ -425,11 +445,10 @@
                                 <input type="tel" name="user_phone" class="input input-tel modal-input feedback-input__tel modal-bathhouse__tel"
                                     placeholder="Ваш телефон...">
                             </div>
-                            <textarea name="user_comment" cols="100" rows="3" class="modal-textarea"
-                                placeholder="Ваше сообщение..."></textarea>
-                                <div class="modal-button__item">
-                                    <button type="submit" class="button modal-button">арендовать баню!</button>
-                                </div>
+                            <textarea name="user_comment" cols="100" rows="3" class="modal-textarea" placeholder="Ваше сообщение..."></textarea>
+                            <div class="modal-button__item">
+                                <button type="submit" id="submit" class="button modal-button">арендовать баню!</button>
+                            </div>
                         </form>
                     </div>
                 </div>
@@ -502,7 +521,7 @@
     <script src="../js/main.js"></script>
     <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
     <script src="../js/jquery.maskedinput.min.js"></script>
-    
+
     <script>
         jQuery(function ($) {
             $("input[type='tel']").mask("+7 (999) 999-9999");
@@ -530,21 +549,21 @@
         });
     </script>
 
-<script>
-    $('form').submit(function (event) {
-        event.preventDefault();
-        $.ajax({
-            type: "POST",
-            url: "smart.php",
-            data: $(this).serialize()
-        }).done(function () {
-            $(this).find("input").val("");
+    <script>
+        $('form').submit(function (event) {
+            event.preventDefault();
+            $.ajax({
+                type: "POST",
+                url: "smart.php",
+                data: $(this).serialize()
+            }).done(function () {
+                $(this).find("input").val("");
 
-            swal("Ваша заявка отправлена!");
+                swal("Ваша заявка отправлена!");
+            });
+            return false;
         });
-        return false;
-    });
-</script>
+    </script>
 
     <script>
         $(document).ready(function () {
@@ -558,6 +577,20 @@
             });
         });
     </script>
+
+<script>
+    document.querySelector('#rent, #rent2, #rent3, #rent4, #rent5').addEventListener('click', function () {
+        yaCounter51629924.reachGoal('btn');
+        return true;
+    })
+</script>
+
+<script>
+    document.querySelector('#submit').addEventListener('click', function () {
+        yaCounter51629924.reachGoal('btn1');
+        return true;
+    })
+</script>
 
 </body>
 

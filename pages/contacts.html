@@ -9,6 +9,26 @@
     <link rel="stylesheet" href="../css/style.css">
     <script src='https://www.google.com/recaptcha/api.js'></script>
     <link rel="shortcut icon" href="../img/favicon.ico" type="image/x-icon">
+    <script type="text/javascript">
+        (function (m, e, t, r, i, k, a) {
+            m[i] = m[i] || function () {
+                (m[i].a = m[i].a || []).push(arguments)
+            };
+            m[i].l = 1 * new Date();
+            k = e.createElement(t), a = e.getElementsByTagName(t)[0], k.async = 1, k.src = r, a.parentNode.insertBefore(
+                k, a)
+        })(window, document, "script", "https://cdn.jsdelivr.net/npm/yandex-metrica-watch/tag.js", "ym");
+        ym(51629924, "init", {
+            id: 51629924,
+            clickmap: true,
+            trackLinks: true,
+            accurateTrackBounce: true,
+            webvisor: true,
+            trackHash: true
+        });
+    </script> <noscript>
+        <div><img src="https://mc.yandex.ru/watch/51629924" style="position:absolute; left:-9999px;" alt="" /></div>
+    </noscript>
 
     <title>Контакты</title>
 </head>
@@ -120,14 +140,14 @@
                     <div class="contacts-feedback__title title">Обратная связь</div>
                     <form action="../pages/smart.php" method="POST">
                         <div class="contacts-feedback__form-wrap">
-                        <input type="text" name="user_name" class="input input-name contacts-input feedback-input__name"
-                            placeholder="Ваше имя...">
-                        <input type="email" name="user_email" class="input input-email contacts-input feedback-input__email"
-                            placeholder="Ваш e-mail...">
+                            <input type="text" name="user_name" class="input input-name contacts-input feedback-input__name"
+                                placeholder="Ваше имя...">
+                            <input type="email" name="user_email" class="input input-email contacts-input feedback-input__email"
+                                placeholder="Ваш e-mail...">
                         </div>
                         <textarea name="comment" cols="118" rows="3" class="feedback-textarea contacts-textarea"
                             placeholder="Ваше сообщение..."></textarea>
-                            <div class="g-recaptcha" data-sitekey="6LeW5YIUAAAAAIDduT9gn3-pTQcRJr7LgeXHAzRW"></div>
+                        <div class="g-recaptcha" data-sitekey="6LeW5YIUAAAAAIDduT9gn3-pTQcRJr7LgeXHAzRW"></div>
                         <br>
                     </form>
                 </div>
@@ -219,20 +239,20 @@
     <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
 
     <script>
-            $('form').submit(function (event) {
-                event.preventDefault();
-                $.ajax({
-                    type: "POST",
-                    url: "smart.php",
-                    data: $(this).serialize()
-                }).done(function () {
-                    $(this).find("input").val("");
-        
-                    swal("Ваша заявка отправлена!");
-                });
-                return false;
+        $('form').submit(function (event) {
+            event.preventDefault();
+            $.ajax({
+                type: "POST",
+                url: "smart.php",
+                data: $(this).serialize()
+            }).done(function () {
+                $(this).find("input").val("");
+
+                swal("Ваша заявка отправлена!");
             });
-        </script>
+            return false;
+        });
+    </script>
 </body>
 
 </html>
