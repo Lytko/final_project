@@ -1621,6 +1621,7 @@ img {
     border: none;
   }
   .burger-menu li a {
+    font-family: 'RobotoLight';
     font-size: 13px;
     text-decoration: none;
     text-transform: uppercase;
