@@ -298,7 +298,7 @@
                     data-wow-delay="0.2s">
                     <div class="slider-for">
                         <div class="photo">
-                            <img src="../img/rooms/main-img-1.png" alt="image" draggable="false" />
+                            <img src="../img/rooms/main-img-1.png" alt="image" draggable="frue" />
                         </div>
                         <div class="photo">
                             <img src="../img/rooms/main-img-2.png" alt="image" draggable="false" />
@@ -548,19 +548,14 @@
             slidesToShow: 1,
             slidesToScroll: 1,
             arrows: true,
-            fade: true,
             asNavFor: '.slider-nav',
-            autoplay: false,
-            infinity: true
+            autoplay: false
         });
         $('.slider-nav').slick({
             slidesToShow: 3,
             slidesToScroll: 1,
             asNavFor: '.slider-for',
-            dots: false,
-            centerMode: true,
-            focusOnSelect: false,
-            infinity: true
+            dots: false
         });
     </script>
 
