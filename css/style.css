@@ -2352,6 +2352,9 @@ img {
   .slick-next__portfolio {
     bottom: 44% !important;
   }
+  .slider-for {
+    width: 300px;
+  }
 }
 
 @media (max-width: 400px) {
@@ -2431,6 +2434,9 @@ img {
   }
   .first-attraction__title {
     font-size: 22px !important;
+  }
+  .slider-for {
+    width: 280px;
   }
 }
 
