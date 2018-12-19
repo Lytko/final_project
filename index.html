@@ -7,6 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/animate.min.css">
     <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
     <script type="text/javascript">
         (function (m, e, t, r, i, k, a) {
@@ -79,14 +80,14 @@
         <div class="container main-container">
             <div class="main-image"><img src="img/main/eagle.png" alt=""></div>
             <div class="main-items">
-                <h1 class="main-items__title">Balaclava</h1>
+                <h1 class="main-items__title wow pulse">Balaclava</h1>
                 <hr class="main-line">
                 <div>
                     <p class="main-text">«Белый дом с орлами» – место для спокойного отдыха у моря, вдали от шумного
                         города. Мы предлагаем Вам отдохнуть в самом сердце Балаклавы, невероятно
                         живописном месте – балке Кефало-вриси.</p>
                 </div>
-                <button type="submit" id="rent" onclick="window.location='pages/rooms.html'" class="main-button">Арендовать
+                <button type="submit" id="rent" onclick="window.location='pages/rooms.html'" class="main-button wow wobble" data-wow-delay="1s">Арендовать
                     номер!</button>
             </div>
         </div>
@@ -98,38 +99,12 @@
         </div>
     </section>
 
-    <!-- <div class="modal modal-bathhouse modal_hidden" id="modal-feedback">
-        <div class="container modal-container">
-            <div class="modal-bathhouse__container">
-                <div class="modal-close">&#10006;</div>
-                <div class="modal-bathhouse__wrap column">
-                    <div class="modal-bathhouse__title col-12">Арендовать номер прямо сейчас!</div>
-                    <div class="modal-bathhouse__form col-12">
-                        <form action="../pages/smart.php" method="POST">
-                            <div class="modal-bathhouse__form-wrap">
-                                <input type="text" name="user_name" class="input input-name modal-input feedback-input__name modal-bathhouse__name"
-                                    placeholder="Ваше имя...">
-                                <input type="email" name="user_email" class="input input-email modal-input feedback-input__email"
-                                    placeholder="Ваш e-mail...">
-                                <input type="tel" name="user_phone" class="input input-tel modal-input feedback-input__tel modal-bathhouse__tel"
-                                    placeholder="Ваш телефон...">
-                            </div>
-                            <textarea name="comment" name="user_comment" cols="100" rows="3" class="modal-textarea"
-                                placeholder="Ваше сообщение..."></textarea>
-                            <button type="submit" class="button modal-button">арендовать номер!</button>
-                        </form>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div> -->
-
     <hr class="line">
 
     <section class="info">
         <div class="container">
             <div class="row info-wrap">
-                <div class="info-block__first col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6">
+                <div class="info-block__first col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 wow fadeInUp" data-wow-delay="0.2s">
                     <h2 class="info-block__first-title title">Добро пожаловать!</h2>
                     <p class="info-block__first-text text">Поверить в то, что когда-то Балаклава была закрытым районом
                         Севастополя, уже почти невозможно —
@@ -141,7 +116,7 @@
                         здесь
                         видимо-невидимо, поэтому культурная статья вашего отдыха в Балаклаве будет очень насыщенной.</p>
                 </div>
-                <div class="info-block__second col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6"><img src="img/info/photo.png"
+                <div class="info-block__second col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 wow fadeInUp" data-wow-delay="0.4s"><img src="img/info/photo.png"
                         alt=""></div>
             </div>
         </div>
@@ -152,7 +127,7 @@
     <section class="about">
         <div class="container">
             <div class="about-wrap row">
-                <div class="about-block col-12 col-sm-6 col-md-6 col-lg-4 col-xl-4">
+                <div class="about-block col-12 col-sm-6 col-md-6 col-lg-4 col-xl-4 wow fadeInRight" data-wow-delay="0.2s">
                     <div class="about-block__img"><img src="img/about/hotel.png" alt=""></div>
                     <div class="about-block__items">
                         <h3 class="about-block__items-title">спокойный отдых</h3>
@@ -162,7 +137,7 @@
                             Кефало-вриси. </p>
                     </div>
                 </div>
-                <div class="about-block col-12 col-sm-6 col-md-6 col-lg-4 col-xl-4">
+                <div class="about-block col-12 col-sm-6 col-md-6 col-lg-4 col-xl-4 wow fadeInRight" data-wow-delay="0.4s">
                     <div class="about-block__img"><img src="img/about/wood.png" alt=""></div>
                     <div class="about-block__items">
                         <h3 class="about-block__items-title">прекрасная природа</h3>
@@ -171,7 +146,7 @@
                             времяпровождения.</p>
                     </div>
                 </div>
-                <div class="about-block col-12 col-sm-6 col-md-6 col-lg-4 col-xl-4">
+                <div class="about-block col-12 col-sm-6 col-md-6 col-lg-4 col-xl-4 wow fadeInRight" data-wow-delay="0.6s">
                     <div class="about-block__img"><img src="img/about/mountains.png" alt=""></div>
                     <div class="about-block__items">
                         <h3 class="about-block__items-title">живописный вид</h3>
@@ -277,21 +252,21 @@
                     овеянных поэтическими легендами. </p>
             </div>
             <div class="attraction__wrap row">
-                <div class="attraction__block col-12 col-sm-6 col-md-6 col-lg-4 col-xl-4">
+                <div class="attraction__block col-12 col-sm-6 col-md-6 col-lg-4 col-xl-4 wow fadeInUp" data-wow-delay="0.2s">
                     <div class="attraction__block-img"><img class="attraction__img" src="img/attraction/img-1.png" alt=""></div>
                     <div class="attraction__block-text main-attraction__text" onclick="window.location='pages/first-attraction.html'">
                         <span class="attraction__block-title">29 Марта, 2016</span>
                         Военно-морской музей Балаклава (Музей подводных&nbsp;лодок)
                     </div>
                 </div>
-                <div class="attraction__block col-12 col-sm-6 col-md-6 col-lg-4 col-xl-4">
+                <div class="attraction__block col-12 col-sm-6 col-md-6 col-lg-4 col-xl-4 wow fadeInUp" data-wow-delay="0.4s">
                     <div class="attraction__block-img"><img class="attraction__img" src="img/attraction/img-2.png" alt=""></div>
                     <div class="attraction__block-text main-attraction__text" onclick="window.location='pages/first-attraction.html'">
                         <span class="attraction__block-title">2 Апреля, 2016</span>
                         Храм Двенадцати апостолов, Балаклава
                     </div>
                 </div>
-                <div class="attraction__block col-12 col-sm-6 col-md-6 col-lg-4 col-xl-4 attraction__block-img__last">
+                <div class="attraction__block col-12 col-sm-6 col-md-6 col-lg-4 col-xl-4 attraction__block-img__last wow fadeInUp" data-wow-delay="0.6s">
                     <div class="attraction__block-img"><img class="attraction__img" src="img/attraction/img-3.png" alt=""></div>
                     <div class="attraction__block-text main-attraction__text" onclick="window.location='pages/first-attraction.html'">
                         <span class="attraction__block-title">8 Апреля, 2016</span>
@@ -359,6 +334,11 @@
     <script src="js/jquery.min.js"></script>
     <script src="js/main.js"></script>
     <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script src="js/wow.min.js"></script>
+
+    <script>
+    new WOW().init();
+    </script>
 
     <script>
         $(document).ready(function () {

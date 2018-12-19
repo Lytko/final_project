@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="../css/bootstrap.min.css">
     <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="../css/slick.css">
+    <link rel="stylesheet" href="../css/animate.min.css">
     <link rel="shortcut icon" href="../img/favicon.ico" type="image/x-icon">
     <script type="text/javascript">
         (function (m, e, t, r, i, k, a) {
@@ -91,15 +92,15 @@
     <section class="bathhouse">
         <div class="container bathhouse-container">
             <div class="bathhouse-items">
-                <h1 class="bathhouse-items__title">баня в балаклаве</h1>
-                <h2 class="bathhouse-items__subtitle">Отдых душой и телом</h2>
+                <h1 class="bathhouse-items__title wow pulse">баня в балаклаве</h1>
+                <h2 class="bathhouse-items__subtitle wow pulse">Отдых душой и телом</h2>
                 <hr class="bathhouse-line">
                 <div>
                     <p class="bathhouse-text">Русская баня давно завоевала мировое признание. Миллионы людей постоянно
                         прибегают к этому простому и надежному способу поддерживать здоровье, красоту,
                         жизненный тонус и хорошее настроение.</p>
                 </div>
-                <button type="submit" id="rent-bathhouse" class="bathhouse-button">арендовать баню!</button>
+                <button type="submit" id="rent-bathhouse" class="bathhouse-button wow wobble" data-wow-delay="1s">арендовать баню!</button>
             </div>
         </div>
         <div class="bathhouse-layers__first bathhouse-layers">
@@ -142,14 +143,14 @@
     <section class="objects">
         <div class="container">
             <div class="objects-wrap row">
-                <div class="objects-block col-12 col-sm-6 col-md-6 col-lg-4 col-xl-4">
+                <div class="objects-block col-12 col-sm-6 col-md-6 col-lg-4 col-xl-4 wow fadeInUp" data-wow-delay="0.2s">
                     <div class="objects-block__img"><img src="../img/objects/img-1.png" alt=""></div>
                     <div class="objects-block__items">
                         <h3 class="objects-block__items-title">Парилка из душистой липы</h3>
                         <p class="objects-block__items-text">Придаст вашему отдыху в русской бане неповторимые ощущения</p>
                     </div>
                 </div>
-                <div class="objects-block col-12 col-sm-6 col-md-6 col-lg-4 col-xl-4">
+                <div class="objects-block col-12 col-sm-6 col-md-6 col-lg-4 col-xl-4 wow fadeInUp" data-wow-delay="0.4s">
                     <div class="objects-block__img"><img src="../img/objects/img-2.png" alt=""></div>
                     <div class="objects-block__items">
                         <h3 class="objects-block__items-title">Купель или бочка водопад</h3>
@@ -157,7 +158,7 @@
                             прохладную чистую воду </p>
                     </div>
                 </div>
-                <div class="objects-block col-12 col-sm-6 col-md-6 col-lg-4 col-xl-4">
+                <div class="objects-block col-12 col-sm-6 col-md-6 col-lg-4 col-xl-4 wow fadeInUp" data-wow-delay="0.6s">
                     <div class="objects-block__img"><img src="../img/objects/img-3.png" alt=""></div>
                     <div class="objects-block__items">
                         <h3 class="objects-block__items-title">Летняя комната для отдыха</h3>
@@ -165,7 +166,7 @@
                             наслаждаясь напитками </p>
                     </div>
                 </div>
-                <div class="objects-block col-12 col-sm-6 col-md-6 col-lg-4 col-xl-4">
+                <div class="objects-block col-12 col-sm-6 col-md-6 col-lg-4 col-xl-4 wow fadeInUp" data-wow-delay="0.2s">
                     <div class="objects-block__img"><img src="../img/objects/img-4.png" alt=""></div>
                     <div class="objects-block__items">
                         <h3 class="objects-block__items-title">Мангал</h3>
@@ -173,7 +174,7 @@
                             можете пожарить любой шашлык</p>
                     </div>
                 </div>
-                <div class="objects-block col-12 col-sm-6 col-md-6 col-lg-4 col-xl-4">
+                <div class="objects-block col-12 col-sm-6 col-md-6 col-lg-4 col-xl-4 wow fadeInUp" data-wow-delay="0.4s">
                     <div class="objects-block__img"><img src="../img/objects/img-5.png" alt=""></div>
                     <div class="objects-block__items">
                         <h3 class="objects-block__items-title">Чаи из Крымских лечебных&nbsp;трав</h3>
@@ -181,7 +182,7 @@
                             вкуснейшими и главное полезными чаями</p>
                     </div>
                 </div>
-                <div class="objects-block col-12 col-sm-6 col-md-6 col-lg-4 col-xl-4">
+                <div class="objects-block col-12 col-sm-6 col-md-6 col-lg-4 col-xl-4 wow fadeInUp" data-wow-delay="0.6s">
                     <div class="objects-block__img"><img src="../img/objects/img-6.png" alt=""></div>
                     <div class="objects-block__items">
                         <h3 class="objects-block__items-title">Комнаты для отдыха</h3>
@@ -310,7 +311,7 @@
                     <div class="feedback-form__text">
                         <textarea name="user_comment" cols="118" rows="3" class="feedback-textarea" placeholder="Ваше сообщение..."></textarea>
                         <br>
-                        <button type="submit" class="button feedback-button">арендовать баню!</button>
+                        <button type="submit" class="button feedback-button wow wobble" data-wow-delay="1s">арендовать баню!</button>
                     </div>
                 </form>
             </div>
@@ -385,7 +386,11 @@
     <script src="../js/jquery.maskedinput.min.js"></script>
     <script src="../js/main.js"></script>
     <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script src="../js/wow.min.js"></script>
 
+    <script>
+    new WOW().init();
+    </script>
     <script>
         $(document).ready(function () {
             $('.slider-for').slick({
