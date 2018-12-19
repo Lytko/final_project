@@ -209,10 +209,10 @@
 }
 
 .main-image {
-  z-index: 1;
+  z-index: 3;
   position: absolute;
   right: 0;
-  top: -250px;
+  top: -200px;
 }
 
 .main-line {
@@ -1548,11 +1548,16 @@ img {
     display: none;
   }
   .header-mobile {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    z-index: 200;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     padding-top: 20px;
     padding-bottom: 20px;
+    background-color: #fff !important;
   }
   .burger-logo {
     padding-right: 10px;
