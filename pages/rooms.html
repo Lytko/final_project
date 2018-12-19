@@ -556,7 +556,7 @@
             slidesToScroll: 1,
             asNavFor: '.slider-for',
             dots: false,
-            
+
         });
     </script>
 
@@ -566,7 +566,10 @@
             $.ajax({
                 type: "POST",
                 url: "smart.php",
-                data: $(this).serialize()
+                data: $(this).serialize(),
+                success: function () {
+                    $("form").trigger("reset");
+                }
             }).done(function () {
                 $(this).find("input").val("");
 
