@@ -2299,7 +2299,7 @@ img {
     bottom: 85px;
   }
   .slick-next {
-    right: -20px;
+    right: -20px !important;
   }
   .portfolio {
     padding-bottom: 30px;
